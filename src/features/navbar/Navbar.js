@@ -9,6 +9,8 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
+import { Link } from "react-router-dom";
+
 const navigation = {
   categories: [
     {
@@ -228,20 +230,20 @@ function Navbar({ children }) {
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
-                    <a
+                    <Link to="/login"
                       href="#"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Sign in
-                    </a>
+                    </Link>
                   </div>
                   <div className="flow-root">
-                    <a
+                    <Link to="/signup"
                       href="#"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Create account
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -424,19 +426,19 @@ function Navbar({ children }) {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a
+                  <Link to="/login"
                     href="#"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Sign in
-                  </a>
+                  </Link>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  <a
+                  <Link to="signup"
                     href="#"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Create account
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="hidden lg:ml-8 lg:flex">
