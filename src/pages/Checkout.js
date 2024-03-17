@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import { Link } from 'react-router-dom';
 
 const products = [
@@ -400,7 +401,7 @@ function Checkout() {
                       className="font-medium text-indigo-600 hover:text-indigo-500"
                     >
                       Continue Shopping
-                      <span aria-hidden="true"> &rarr;</span>
+                      <span aria-hidden="true"> &rar;</span>
                     </button>
                   </Link>
                 </p>
