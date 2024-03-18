@@ -1,4 +1,4 @@
-import ProductDetails from '../features/porduct-list/components/ProductDetails'
+import ProductDetails from '../features/product/components/ProductDetails'
 
 
 function Home() {
