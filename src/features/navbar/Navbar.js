@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Fragment, useState } from "react";
-import { Dialog,  Tab, Transition } from "@headlessui/react";
+import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   // MagnifyingGlassIcon,
@@ -71,8 +71,7 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "Home", href: "#" }
   ],
 };
 
@@ -209,18 +208,18 @@ function Navbar({ children }) {
                   </Tab.Panels>
                 </Tab.Group>
 
-                {/* <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <a
+                      <Link to="/"
                         href={page.href}
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
                         {page.name}
-                      </a>
+                      </Link>
                     </div>
                   ))}
-                </div> */}
+                </div>
 
                 <div className="space-y-6 border-t border-primary px-4 py-6">
                   <div className="flow-root">
@@ -296,7 +295,7 @@ function Navbar({ children }) {
               </div>
 
               {/* Flyout menus */}
-              {/* <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
+              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
                 <div className="flex h-full space-x-8">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
@@ -336,34 +335,35 @@ function Navbar({ children }) {
                                   <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
                                     <div className="col-start-2 grid grid-cols-2 gap-x-8">
                                       {category.featured.map((item) => (
-                                        <div
-                                          key={item.name}
-                                          className="group relative text-base sm:text-sm"
-                                        >
-                                          <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                            <img
-                                              src={item.imageSrc}
-                                              alt={item.imageAlt}
-                                              className="object-cover object-center"
-                                            />
-                                          </div>
-                                          <a
-                                            href={item.href}
-                                            className="mt-6 block font-medium text-gray-900"
-                                          >
-                                            <span
-                                              className="absolute inset-0 z-10"
-                                              aria-hidden="true"
-                                            />
-                                            {item.name}
-                                          </a>
-                                          <p
-                                            aria-hidden="true"
-                                            className="mt-1"
-                                          >
-                                            Shop now
-                                          </p>
-                                        </div>
+                                        <></>
+                                        // <div
+                                        //   key={item.name}
+                                        //   className="group relative text-base sm:text-sm"
+                                        // >
+                                        //   <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                                        //     <img
+                                        //       src={item.imageSrc}
+                                        //       alt={item.imageAlt}
+                                        //       className="object-cover object-center"
+                                        //     />
+                                        //   </div>
+                                        //   <a
+                                        //     href={item.href}
+                                        //     className="mt-6 block font-medium text-gray-900"
+                                        //   >
+                                        //     <span
+                                        //       className="absolute inset-0 z-10"
+                                        //       aria-hidden="true"
+                                        //     />
+                                        //     {item.name}
+                                        //   </a>
+                                        //   <p
+                                        //     aria-hidden="true"
+                                        //     className="mt-1"
+                                        //   >
+                                        //     Shop now
+                                        //   </p>
+                                        // </div>
                                       ))}
                                     </div>
                                     <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
@@ -408,16 +408,16 @@ function Navbar({ children }) {
                   ))}
 
                   {navigation.pages.map((page) => (
-                    <a
+                    <Link to="/"
                       key={page.name}
                       href={page.href}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
-              </Popover.Group> */}
+              </Popover.Group>
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
