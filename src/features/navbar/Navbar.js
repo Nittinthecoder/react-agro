@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Fragment, useState } from "react";
-import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
+import { Dialog,  Tab, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
-  MagnifyingGlassIcon,
+  // MagnifyingGlassIcon,
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
 const navigation = {
   categories: [
     {
-      id: "women",
-      name: "Women",
+      id: "products",
+      name: "Products",
       featured: [
         {
           name: "New Arrivals",
@@ -36,43 +36,37 @@ const navigation = {
       ],
       sections: [
         {
-          id: "clothing",
-          name: "Clothing",
+          id: "agri-products",
+          name: "Agri-products",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Dresses", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Denim", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
+            { name: "Wheat", href: "#" },
+            { name: "Sugarcane", href: "#" },
+            
           ],
         },
-        {
-          id: "accessories",
-          name: "Accessories",
-          items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
-          ],
-        },
-        {
-          id: "brands",
-          name: "Brands",
-          items: [
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Significant Other", href: "#" },
-          ],
-        },
+        // {
+        //   id: "accessories",
+        //   name: "Accessories",
+        //   items: [
+        //     { name: "Watches", href: "#" },
+        //     { name: "Wallets", href: "#" },
+        //     { name: "Bags", href: "#" },
+        //     { name: "Sunglasses", href: "#" },
+        //     { name: "Hats", href: "#" },
+        //     { name: "Belts", href: "#" },
+        //   ],
+        // },
+        // {
+        //   id: "brands",
+        //   name: "Brands",
+        //   items: [
+        //     { name: "Full Nelson", href: "#" },
+        //     { name: "My Way", href: "#" },
+        //     { name: "Re-Arranged", href: "#" },
+        //     { name: "Counterfeit", href: "#" },
+        //     { name: "Significant Other", href: "#" },
+        //   ],
+        // },
       ],
     },
   ],
@@ -89,7 +83,7 @@ function classNames(...classes) {
 function Navbar({ children }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="bg-white">
+    <div className="bg-background">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -115,11 +109,11 @@ function Navbar({ children }) {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
+              <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-background pb-12 shadow-xl">
                 <div className="flex px-4 pb-2 pt-5">
                   <button
                     type="button"
-                    className="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
+                    className="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-text"
                     onClick={() => setOpen(false)}
                   >
                     <span className="absolute -inset-0.5" />
@@ -130,7 +124,7 @@ function Navbar({ children }) {
 
                 {/* Links */}
                 <Tab.Group as="div" className="mt-2">
-                  <div className="border-b border-gray-200">
+                  <div >
                     <Tab.List className="-mb-px flex space-x-8 px-4">
                       {navigation.categories.map((category) => (
                         <Tab
@@ -138,7 +132,7 @@ function Navbar({ children }) {
                           className={({ selected }) =>
                             classNames(
                               selected
-                                ? "border-indigo-600 text-indigo-600"
+                                ? "border-accent text-text"
                                 : "border-transparent text-gray-900",
                               "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
                             )
@@ -161,14 +155,14 @@ function Navbar({ children }) {
                               key={item.name}
                               className="group relative text-sm"
                             >
-                              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                              {/* <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                                 <img
                                   src={item.imageSrc}
                                   alt={item.imageAlt}
                                   className="object-cover object-center"
                                 />
-                              </div>
-                              <a
+                              </div> */}
+                              {/* <a
                                 href={item.href}
                                 className="mt-6 block font-medium text-gray-900"
                               >
@@ -180,7 +174,7 @@ function Navbar({ children }) {
                               </a>
                               <p aria-hidden="true" className="mt-1">
                                 Shop now
-                              </p>
+                              </p> */}
                             </div>
                           ))}
                         </div>
@@ -188,7 +182,7 @@ function Navbar({ children }) {
                           <div key={section.name}>
                             <p
                               id={`${category.id}-${section.id}-heading-mobile`}
-                              className="font-medium text-gray-900"
+                              className="font-medium text-text"
                             >
                               {section.name}
                             </p>
@@ -215,7 +209,7 @@ function Navbar({ children }) {
                   </Tab.Panels>
                 </Tab.Group>
 
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                {/* <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <a
@@ -226,9 +220,9 @@ function Navbar({ children }) {
                       </a>
                     </div>
                   ))}
-                </div>
+                </div> */}
 
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                <div className="space-y-6 border-t border-primary px-4 py-6">
                   <div className="flow-root">
                     <Link to="/login"
                       href="#"
@@ -247,7 +241,7 @@ function Navbar({ children }) {
                   </div>
                 </div>
 
-                <div className="border-t border-gray-200 px-4 py-6">
+                <div className="border-t border-primary px-4 py-6">
                   <a href="#" className="-m-2 flex items-center p-2">
                     <img
                       src="https://tailwindui.com/img/flags/flag-canada.svg"
@@ -266,7 +260,7 @@ function Navbar({ children }) {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
+      <header className="relative bg-background">
         {/* <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           Get free delivery on orders over $100
         </p> */}
@@ -275,8 +269,9 @@ function Navbar({ children }) {
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
         >
-          <div className="border-b border-gray-200">
+          <div>
             <div className="flex h-16 items-center">
+              {/* menu button in mobile devices */}
               <button
                 type="button"
                 className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
@@ -301,7 +296,7 @@ function Navbar({ children }) {
               </div>
 
               {/* Flyout menus */}
-              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
+              {/* <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
                 <div className="flex h-full space-x-8">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
@@ -311,9 +306,9 @@ function Navbar({ children }) {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? "border-indigo-600 text-indigo-600"
-                                  : "border-transparent text-gray-700 hover:text-gray-800",
-                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                                  ? "border-black text-text"
+                                  : "border-transparent text-text hover:text-gray-500",
+                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out focus:outline-none"
                               )}
                             >
                               {category.name}
@@ -330,13 +325,13 @@ function Navbar({ children }) {
                             leaveTo="opacity-0"
                           >
                             <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
-                              {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
+                              
                               <div
-                                className="absolute inset-0 top-1/2 bg-white shadow"
+                                className="absolute inset-0 top-1/2 "
                                 aria-hidden="true"
                               />
 
-                              <div className="relative bg-white">
+                              <div className="relative bg-background">
                                 <div className="mx-auto max-w-7xl px-8">
                                   <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
                                     <div className="col-start-2 grid grid-cols-2 gap-x-8">
@@ -422,20 +417,20 @@ function Navbar({ children }) {
                     </a>
                   ))}
                 </div>
-              </Popover.Group>
+              </Popover.Group> */}
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <Link to="/login"
                     href="#"
-                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                    className="text-sm font-medium text-text hover:text-gray-500"
                   >
                     Sign in
                   </Link>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   <Link to="signup"
                     href="#"
-                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                    className="text-sm font-medium text-text hover:text-gray-500"
                   >
                     Create account
                   </Link>
@@ -444,20 +439,20 @@ function Navbar({ children }) {
                 <div className="hidden lg:ml-8 lg:flex">
                   <a
                     href="#"
-                    className="flex items-center text-gray-700 hover:text-gray-800"
+                    className="flex items-center text-text hover:text-gray-500"
                   >
                     <img
                       src="https://tailwindui.com/img/flags/flag-canada.svg"
-                      alt=""
+                      alt="india"
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span className="ml-3 block text-sm font-medium">CAD</span>
+                    <span className="ml-3 block text-sm font-medium">IND</span>
                     <span className="sr-only">, change currency</span>
                   </a>
                 </div>
 
                 {/* Search */}
-                <div className="flex lg:ml-6">
+                {/* <div className="flex lg:ml-6">
                   <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Search</span>
                     <MagnifyingGlassIcon
@@ -465,19 +460,19 @@ function Navbar({ children }) {
                       aria-hidden="true"
                     />
                   </a>
-                </div>
+                </div> */}
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
                   <a href="#" className="group -m-2 flex items-center p-2">
                   <Link to="/Cart">
                     <ShoppingBagIcon
-                      className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                      className="h-6 w-6 flex-shrink-0 text-secondary group-hover:text-primary"
                       aria-hidden="true"
                     />
                   </Link>
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      0
+                    <span className="ml-2 text-sm font-medium text-primary group-hover:text-secondary">
+                      2
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
                   </a>

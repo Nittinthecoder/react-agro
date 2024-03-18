@@ -122,7 +122,7 @@ export function ProductList() {
 
   return (
     <div>
-      <div className="bg-white">
+      <div className="bg-background">
         <div>
           {/* Mobile filter dialog */}
           <Transition.Root show={mobileFiltersOpen} as={Fragment}>
@@ -249,18 +249,18 @@ export function ProductList() {
           </Transition.Root>
 
           <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
+            <div className="flex items-baseline justify-between border-b border-accent pb-6 pt-24">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900">
-                New Arrivals
+                  PRODUCTS
               </h1>
 
               <div className="flex items-center">
                 <Menu as="div" className="relative inline-block text-left">
                   <div>
-                    <Menu.Button className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
+                    <Menu.Button className="group inline-flex justify-center text-sm font-medium text-text hover:text-gray-400">
                       Sort
                       <ChevronDownIcon
-                        className="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                        className="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-primary"
                         aria-hidden="true"
                       />
                     </Menu.Button>
@@ -286,7 +286,7 @@ export function ProductList() {
                                   option.current
                                     ? "font-medium text-gray-900"
                                     : "text-gray-500",
-                                  active ? "bg-gray-100" : "",
+                                  active ? "bg-accent" : "",
                                   "block px-4 py-2 text-sm"
                                 )}
                               >
@@ -307,14 +307,14 @@ export function ProductList() {
                   <span className="sr-only">View grid</span>
                   <Squares2X2Icon className="h-5 w-5" aria-hidden="true" />
                 </button>
-                <button
+                {/* <button
                   type="button"
                   className="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden"
                   onClick={() => setMobileFiltersOpen(true)}
                 >
                   <span className="sr-only">Filters</span>
                   <FunnelIcon className="h-5 w-5" aria-hidden="true" />
-                </button>
+                </button> */}
               </div>
             </div>
 
@@ -342,12 +342,12 @@ export function ProductList() {
                     <Disclosure
                       as="div"
                       key={section.id}
-                      className="border-b border-gray-200 py-6"
+                      className="border-b border-primary py-6"
                     >
                       {({ open }) => (
                         <>
                           <h3 className="-my-3 flow-root">
-                            <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500">
+                            <Disclosure.Button className="flex w-full items-center justify-between bg-background py-3 text-sm text-text hover:text-primary">
                               <span className="font-medium text-gray-900">
                                 {section.name}
                               </span>
@@ -379,11 +379,11 @@ export function ProductList() {
                                     defaultValue={option.value}
                                     type="checkbox"
                                     defaultChecked={option.checked}
-                                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                    className="h-4 w-4 rounded border-accent text-text focus:ring-primary"
                                   />
                                   <label
                                     htmlFor={`filter-${section.id}-${optionIdx}`}
-                                    className="ml-3 text-sm text-gray-600"
+                                    className="ml-3 text-sm text-text"
                                   >
                                     {option.label}
                                   </label>
@@ -399,7 +399,7 @@ export function ProductList() {
 
                 {/* Product grid */}
                 <div className="lg:col-span-3">
-                  <div className="bg-white">
+                  <div className="bg-background">
                     <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                       <h2 className="text-2xl font-bold tracking-tight text-gray-900">
                         Products
@@ -408,7 +408,7 @@ export function ProductList() {
                       <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                         {products.map((product) => (
                           <div key={product.id} className="group relative">
-                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-secondary lg:aspect-none group-hover:opacity-75 lg:h-80">
                               <img
                                 src={product.imageSrc}
                                 alt={product.imageAlt}
@@ -417,7 +417,7 @@ export function ProductList() {
                             </div>
                             <div className="mt-4 flex justify-between">
                               <div>
-                                <h3 className="text-sm text-gray-700">
+                                <h3 className="text-sm text-text">
                                   <a href={product.href}>
                                     <span
                                       aria-hidden="true"
@@ -426,7 +426,7 @@ export function ProductList() {
                                     {product.name}
                                   </a>
                                 </h3>
-                                <p className="mt-1 text-sm text-gray-500">
+                                <p className="mt-1 text-sm text-text">
                                   {product.color}
                                 </p>
                               </div>
