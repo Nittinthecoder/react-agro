@@ -1,5 +1,5 @@
 
-import { ShoppingCart } from "../features/cart/ShoppingCart"
+import { ShoppingCart } from "../features/shopping-cart/ShoppingCart"
 
 
 function Home() {

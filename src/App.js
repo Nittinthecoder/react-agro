@@ -2,8 +2,8 @@ import React from 'react';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
-import Cart from './pages/Cart';
-import Checkout from './pages/Checkout';
+import  Cart  from './pages/Cart';
+import CheckoutPage from './pages/CheckoutPage';
 
 import {
   createBrowserRouter,
@@ -26,12 +26,12 @@ const router = createBrowserRouter([
     element: (<SignupPage />),
   },
   {
-    path: "/Cart",
+    path: "/cart",
     element: (<Cart />),
   },
   {
     path: "/Checkout",
-    element: (<Checkout />),
+    element: (<CheckoutPage />),
   },
 ]);
 
