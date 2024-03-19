@@ -1,6 +1,16 @@
-export function fetchCount(amount = 1) {
+export function fetchAllProducts() {
   return new Promise(async(resolve) =>{
-    const response = await fetch('localhost://localhost:8080')
+    const response = await fetch('http://localhost:8080/products')
+    const  data = await response.json()
+    resolve({data})
+  }
+  );
+}
+
+
+export function fetchProductById(id) {
+  return new Promise(async(resolve) =>{
+    const response = await fetch('http://localhost:8080/products/'+id)
     const  data = await response.json()
     resolve({data})
   }

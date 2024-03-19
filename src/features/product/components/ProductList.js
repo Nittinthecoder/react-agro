@@ -1,65 +1,27 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import React, { useState, Fragment } from "react";
-// import { useSelector, useDispatch } from 'react-redux';
-// import {
-//   increment,
-//   incrementAsync,
-//   selectCount,
-// } from './ProductListSlice';
+import { 
+  useSelector, 
+  useDispatch 
+} 
+  from 'react-redux';
+import { 
+  fetchAllProductsAsync,
+  selectAllProducts 
+} from '../ProductSlice';
 
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
-  // FunnelIcon,
   MinusIcon,
   PlusIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
-const products = [
-  {
-    id: 1,
-    name: "Basic Tee",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
-  },
-  {
-    id: 2,
-    name: "Basic Tee",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
-  },
-  {
-    id: 3,
-    name: "Basic Tee",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
-  },
-  {
-    id: 4,
-    name: "Basic Tee",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "$35",
-    color: "Black",
-  },
-];
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
   { name: "Best Rating", href: "#", current: false },
@@ -67,13 +29,6 @@ const sortOptions = [
   { name: "Price: Low to High", href: "#", current: false },
   { name: "Price: High to Low", href: "#", current: false },
 ];
-// const subCategories = [
-//   { name: "Totes", href: "#" },
-//   { name: "Backpacks", href: "#" },
-//   { name: "Travel Bags", href: "#" },
-//   { name: "Hip Bags", href: "#" },
-//   { name: "Laptop Sleeves", href: "#" },
-// ];
 const filters = [
   {
     id: "Price",
@@ -98,28 +53,18 @@ const filters = [
   //     { value: "accessories", label: "Accessories", checked: false },
   //   ],
   // },
-  // {
-  //   id: "size",
-  //   name: "Size",
-  //   options: [
-  //     { value: "2l", label: "2L", checked: false },
-  //     { value: "6l", label: "6L", checked: false },
-  //     { value: "12l", label: "12L", checked: false },
-  //     { value: "18l", label: "18L", checked: false },
-  //     { value: "20l", label: "20L", checked: false },
-  //     { value: "40l", label: "40L", checked: true },
-  //   ],
-  // },
 ];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-
 export function ProductList() {
-  // const count = useSelector(selectCount);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const products = useSelector(selectAllProducts);
+
+  useEffect(()=>{
+    dispatch(fetchAllProductsAsync())
+  },[dispatch])
 
   return (
     <div>
@@ -405,15 +350,14 @@ export function ProductList() {
                       <h2 className="text-2xl font-bold tracking-tight text-gray-900">
                         Products
                       </h2>
-
                       <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                         {products.map((product) => (
-                          <Link to="/productdetails">
-                          <div key={product.id} className="group relative">
-                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-secondary lg:aspect-none group-hover:opacity-75 lg:h-80">
+                          <Link to={`/productdetails/${product.id}`} key={product.id}>
+                          <div  className="group relative bg-secondary border solid border-primary rounded-xl p-2">
+                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-secondary lg:aspect-none group-hover:opacity-90 lg:h-60">
                               <img
-                                src={product.imageSrc}
-                                alt={product.imageAlt}
+                                src={product.thumbnail}
+                                // alt={product.imageAlt}
                                 className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                               />
                             </div>
@@ -425,15 +369,15 @@ export function ProductList() {
                                       aria-hidden="true"
                                       className="absolute inset-0"
                                     />
-                                    {product.name}
+                                    {product.title}
                                   </a>
                                 </h3>
                                 <p className="mt-1 text-sm text-text">
-                                  {product.color}
+                                  {/* {product.color} */}
                                 </p>
                               </div>
-                              <p className="text-sm font-medium text-gray-900">
-                                {product.price}
+                              <p className="text-sm font-medium text-text">
+                                ${product.price}
                               </p>
                             </div>
                           </div>
