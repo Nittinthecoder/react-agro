@@ -87,23 +87,23 @@ export default function ProductDetails() {
             </nav>
 
             {/* Image gallery */}
-            <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
-              <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
+            <div className="mx-6 mt-6 max-w-2xl sm:px-6 sm:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8 ">
+              <div className="aspect-h-3 aspect-w-3 hidden overflow-hidden border solid p-2 border-primary rounded-xl lg:block ">
                 <img
                   src={product.images[0]}
                   alt={product.title}
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-center border solid bg-primary rounded-lg"
                 />
               </div>
               <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
-                <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+                <div className="aspect-h-2 aspect-w-3 overflow-hidden border solid border-primary rounded-xl">
                   <img
                     src={product.images[1]}
                     alt={product.title}
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+                <div className="aspect-h-2 aspect-w-3 overflow-hidden border solid  border-primary rounded-xl">
                   <img
                     src={product.images[2]}
                     alt={product.title}
@@ -111,7 +111,7 @@ export default function ProductDetails() {
                   />
                 </div>
               </div>
-              <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
+              <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg border solid border-primary rounded-xl ">
                 <img
                   src={product.images[3]}
                   alt={product.title}
@@ -132,7 +132,7 @@ export default function ProductDetails() {
               <div className="mt-4 lg:row-span-3 lg:mt-0">
                 <h2 className="sr-only">Product information</h2>
                 <p className="text-3xl tracking-tight text-gray-900">
-                  {product.price}
+                  & {product.price}
                 </p>
 
                 {/* Reviews */}

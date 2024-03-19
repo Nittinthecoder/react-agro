@@ -1,11 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ArgoXPlanet",
+  "name": "Your favorite agri product site",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://i.pinimg.com/originals/30/34/5a/30345a99c8bc23f42d6b9848227b1f0d.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "jpeg"
     },
     {
       "src": "logo192.png",

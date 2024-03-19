@@ -41,7 +41,6 @@ const navigation = {
           items: [
             { name: "Wheat", href: "#" },
             { name: "Sugarcane", href: "#" },
-            
           ],
         },
         // {
@@ -70,9 +69,7 @@ const navigation = {
       ],
     },
   ],
-  pages: [
-    { name: "Home", href: "#" }
-  ],
+  pages: [{ name: "Home", href: "#" }],
 };
 
 function classNames(...classes) {
@@ -123,7 +120,7 @@ function Navbar({ children }) {
 
                 {/* Links */}
                 <Tab.Group as="div" className="mt-2">
-                  <div >
+                  <div>
                     <Tab.List className="-mb-px flex space-x-8 px-4">
                       {navigation.categories.map((category) => (
                         <Tab
@@ -211,7 +208,8 @@ function Navbar({ children }) {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <Link to="/"
+                      <Link
+                        to="/"
                         href={page.href}
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
@@ -223,7 +221,8 @@ function Navbar({ children }) {
 
                 <div className="space-y-6 border-t border-primary px-4 py-6">
                   <div className="flow-root">
-                    <Link to="/login"
+                    <Link
+                      to="/login"
                       href="#"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
@@ -231,7 +230,8 @@ function Navbar({ children }) {
                     </Link>
                   </div>
                   <div className="flow-root">
-                    <Link to="/signup"
+                    <Link
+                      to="/signup"
                       href="#"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
@@ -273,7 +273,7 @@ function Navbar({ children }) {
               {/* menu button in mobile devices */}
               <button
                 type="button"
-                className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className="relative rounded-md bg-background p-2 text-gray-400 lg:hidden"
                 onClick={() => setOpen(true)}
               >
                 <span className="absolute -inset-0.5" />
@@ -283,15 +283,11 @@ function Navbar({ children }) {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
-                  <span className="sr-only">Agro</span>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    // src="file:///Users/nittinnobbymathew/Downloads/798ad7fdd8ff46bcb459731bedc26645.png"
+                    src="https://i.pinimg.com/originals/30/34/5a/30345a99c8bc23f42d6b9848227b1f0d.jpg"
                     alt=""
                   />
-                </a>
               </div>
 
               {/* Flyout menus */}
@@ -324,7 +320,6 @@ function Navbar({ children }) {
                             leaveTo="opacity-0"
                           >
                             <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
-                              
                               <div
                                 className="absolute inset-0 top-1/2 "
                                 aria-hidden="true"
@@ -408,7 +403,8 @@ function Navbar({ children }) {
                   ))}
 
                   {navigation.pages.map((page) => (
-                    <Link to="/"
+                    <Link
+                      to="/"
                       key={page.name}
                       href={page.href}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
@@ -421,14 +417,16 @@ function Navbar({ children }) {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <Link to="/login"
+                  <Link
+                    to="/login"
                     href="#"
                     className="text-sm font-medium text-text hover:text-gray-500"
                   >
                     Sign in
                   </Link>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  <Link to="signup"
+                  <Link
+                    to="signup"
                     href="#"
                     className="text-sm font-medium text-text hover:text-gray-500"
                   >
@@ -465,12 +463,12 @@ function Navbar({ children }) {
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
                   <a href="#" className="group -m-2 flex items-center p-2">
-                  <Link to="/Cart">
-                    <ShoppingBagIcon
-                      className="h-6 w-6 flex-shrink-0 text-secondary group-hover:text-primary"
-                      aria-hidden="true"
-                    />
-                  </Link>
+                    <Link to="/Cart">
+                      <ShoppingBagIcon
+                        className="h-6 w-6 flex-shrink-0 text-secondary group-hover:text-primary"
+                        aria-hidden="true"
+                      />
+                    </Link>
                     <span className="ml-2 text-sm font-medium text-primary group-hover:text-secondary">
                       2
                     </span>
@@ -483,9 +481,7 @@ function Navbar({ children }) {
         </nav>
       </header>
       <main>
-        <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-          {children}
-        </div>
+        <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">{children}</div>
       </main>
     </div>
   );
