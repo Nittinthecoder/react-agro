@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Paddy",
+    "price(per quintal)": 2640.0,
+    "description": "Fully Organic and Free from pesticides",
+    "ratings": 4.9,
+    "images": [
+      {
+        "image": "/images/products/1.jpg"
+      }
+    ],
+    "category": "Wholesale",
+    "seller": "linda",
+    "Bargain option": "yes",
+    "stock": 10
+  },
+  {
+    "name": "Sugarcane",
+    "price(per ton)": 3050.0,
+    "description": "Fully Organic and Free from pesticides",
+    "ratings": 4.0,
+    "images": [
+      {
+        "image": "/images/products/2.jpg"
+      }
+    ],
+    "category": "Wholesale",
+    "seller": "lingam",
+    "Bargain option": "yes",
+    "stock": 50
+  },
+  {
+    "name": "wheat",
+    "price(per quintal)": 2380.0,
+    "description": "Fully Organic and Free from pesticides",
+    "ratings": 3.9,
+    "images": [
+      {
+        "image": "/images/products/3.jpg"
+      }
+    ],
+    "category": "Wholesale",
+    "seller": "linda",
+    "Bargain option": "yes",
+    "stock": 10
+  },
+  {
+    "name": "Paddy",
+    "price(kg)": 23.0,
+    "description": "Farm fresh but use of pesticide",
+    "ratings": 3.0,
+    "images": [
+      {
+        "image": "/images/products/4.jpg"
+      }
+    ],
+    "category": "retail",
+    "seller": "linda",
+    "Bargain option": "no",
+    "stock": 100
+  },
+  {
+    "name": "Sugarcane",
+    "price(per kg)": 3.0,
+    "description": "Fully Organic and Free from pesticides",
+    "ratings": 4.9,
+    "images": [
+      {
+        "image": "/images/products/5.jpg"
+      }
+    ],
+    "category": "retail",
+    "seller": "linda",
+    "Bargain option": "no",
+    "stock": 10
+  },
+  {
+    "name": "wheat",
+    "price(quintal)": 26.4,
+    "description": "Fully Organic and Free from pesticides",
+    "ratings": 4.9,
+    "images": [
+      {
+        "image": "/images/products/1.jpg"
+      }
+    ],
+    "category": "Wholesale",
+    "seller": "linda",
+    "Bargain option": "no",
+    "stock": 10
+  }
+]

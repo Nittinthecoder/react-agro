@@ -132,7 +132,7 @@ export default function ProductDetails() {
               <div className="mt-4 lg:row-span-3 lg:mt-0">
                 <h2 className="sr-only">Product information</h2>
                 <p className="text-3xl tracking-tight text-gray-900">
-                  & {product.price}
+                  Rs {product.price}
                 </p>
 
                 {/* Reviews */}
@@ -304,8 +304,7 @@ export default function ProductDetails() {
                 </div>
 
                 <div className="mt-10">
-                  <h2 className="text-sm font-medium text-gray-900">Details</h2>
-
+                  <h2 className="text-sm font-medium text-text">Details</h2>
                   <div className="mt-4 space-y-6">
                     <p className="text-sm text-gray-600">{product.details}</p>
                   </div>
