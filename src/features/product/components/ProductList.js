@@ -67,6 +67,7 @@ export function ProductList() {
 
   return (
     <div>
+      
       <div className="bg-background">
         <div>
           {/* Mobile filter dialog */}

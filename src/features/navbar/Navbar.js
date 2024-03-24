@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Fragment, useState } from "react";
-import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
+import { Dialog, Popover, Tab, Transition, Menu } from "@headlessui/react";
 import {
   Bars3Icon,
   // MagnifyingGlassIcon,
@@ -71,6 +71,18 @@ const navigation = {
   ],
   pages: [{ name: "Home", href: "#" }],
 };
+
+const user = {
+  name: 'Tom Cook',
+  email: 'tom@example.com',
+  imageUrl:
+    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+};
+const userNavigation = [
+  { name: 'Your Profile', link: '/' },
+  { name: 'Settings', link: '/' },
+  { name: 'Sign out', link: '/login' },
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -260,10 +272,6 @@ function Navbar({ children }) {
       </Transition.Root>
 
       <header className="relative bg-background">
-        {/* <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over $100
-        </p> */}
-
         <nav
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
@@ -283,11 +291,11 @@ function Navbar({ children }) {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://i.pinimg.com/originals/30/34/5a/30345a99c8bc23f42d6b9848227b1f0d.jpg"
-                    alt=""
-                  />
+                <img
+                  className="h-8 w-auto"
+                  src="https://i.pinimg.com/originals/30/34/5a/30345a99c8bc23f42d6b9848227b1f0d.jpg"
+                  alt=""
+                />
               </div>
 
               {/* Flyout menus */}
@@ -328,39 +336,6 @@ function Navbar({ children }) {
                               <div className="relative bg-background">
                                 <div className="mx-auto max-w-7xl px-8">
                                   <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
-                                    <div className="col-start-2 grid grid-cols-2 gap-x-8">
-                                      {category.featured.map((item) => (
-                                        <></>
-                                        // <div
-                                        //   key={item.name}
-                                        //   className="group relative text-base sm:text-sm"
-                                        // >
-                                        //   <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                        //     <img
-                                        //       src={item.imageSrc}
-                                        //       alt={item.imageAlt}
-                                        //       className="object-cover object-center"
-                                        //     />
-                                        //   </div>
-                                        //   <a
-                                        //     href={item.href}
-                                        //     className="mt-6 block font-medium text-gray-900"
-                                        //   >
-                                        //     <span
-                                        //       className="absolute inset-0 z-10"
-                                        //       aria-hidden="true"
-                                        //     />
-                                        //     {item.name}
-                                        //   </a>
-                                        //   <p
-                                        //     aria-hidden="true"
-                                        //     className="mt-1"
-                                        //   >
-                                        //     Shop now
-                                        //   </p>
-                                        // </div>
-                                      ))}
-                                    </div>
                                     <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
                                       {category.sections.map((section) => (
                                         <div key={section.name}>
@@ -449,17 +424,6 @@ function Navbar({ children }) {
                   </a>
                 </div>
 
-                {/* Search */}
-                {/* <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Search</span>
-                    <MagnifyingGlassIcon
-                      className="h-6 w-6"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </div> */}
-
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
                   <a href="#" className="group -m-2 flex items-center p-2">
@@ -474,6 +438,47 @@ function Navbar({ children }) {
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
                   </a>
+                </div>
+
+                {/* Profile dropdown */}
+                <div className="ml-4 flow-root lg:ml-6">
+                  <Menu as="div" classNam="relative ml-3">
+                    <Menu.Button className="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <span className="sr-only">Open user menu</span>
+                      <img
+                        className="h-8 w-8 rounded-full"
+                        src={user.imageUrl}
+                        alt=""
+                      />
+                    </Menu.Button>
+                    <Transition
+                          as={Fragment}
+                          enter="transition ease-out duration-100"
+                          enterFrom="transform opacity-0 scale-95"
+                          enterTo="transform opacity-100 scale-100"
+                          leave="transition ease-in duration-75"
+                          leaveFrom="transform opacity-100 scale-100"
+                          leaveTo="transform opacity-0 scale-95"
+                        >
+                          <Menu.Items className="absolute  z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            {userNavigation.map((item) => (
+                              <Menu.Item key={item.name}>
+                                {({ active }) => (
+                                  <Link
+                                    to = {item.link}
+                                    className={classNames(
+                                      active ? 'bg-gray-100' : '',
+                                      'block px-4 py-2 text-sm text-gray-700'
+                                    )}
+                                  >
+                                    {item.name}
+                                  </Link>
+                                )}
+                              </Menu.Item>
+                            ))}
+                          </Menu.Items>
+                        </Transition>
+                  </Menu>
                 </div>
               </div>
             </div>

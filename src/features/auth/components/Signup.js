@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { useSelector, useDispatch } from "react-redux";
 import { createUserAsync, selectLoggedInUser } from "../authSlice";
 
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 export function Signup() {
   const user = useSelector(selectLoggedInUser);
@@ -18,13 +18,13 @@ export function Signup() {
     watch,
     formState: { errors },
   } = useForm();
-  // const errors
+
 
   console.log(errors);
 
   return (
     <>
-      {user?.email}
+      {user && <Navigate to="/" replace={true}></Navigate>}
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
