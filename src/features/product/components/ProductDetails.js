@@ -11,7 +11,11 @@ import {
   fetchProductByIdAsync,
   selectProductById 
 } from '../ProductSlice';
-  
+
+import { selectLoggedInUser } from "../../auth/authSlice";
+
+import { addToCartAsync } from "../../shopping-cart/CartSlice";
+
 const colors = [
     { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
     { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
@@ -36,10 +40,15 @@ function classNames(...classes) {
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(colors[0]);
   const [selectedSize, setSelectedSize] = useState(sizes[2]);
+  const user = useSelector(selectLoggedInUser);
   const product = useSelector(selectProductById);
   const dispatch = useDispatch();
   const params = useParams();
 
+  const handleCart = (e) => {
+    e.preventDefault();
+    dispatch(addToCartAsync({...product,quantity:1,user}))
+  };
   useEffect(()=>{
     dispatch(fetchProductByIdAsync(params.id))
   },[dispatch, params.id])
@@ -263,6 +272,7 @@ export default function ProductDetails() {
                   </div>
                   <Link to="/cart">
                     <button
+                    onClick={handleCart}
                       type="submit"
                       className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:text-text focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     >

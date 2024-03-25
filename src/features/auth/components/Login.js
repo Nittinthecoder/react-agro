@@ -117,14 +117,14 @@ export function Login() {
                 Sign in
               </button>
             </div>
-            <div>
+            {/* <div>
               <button
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-accent px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:text-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
               >
                 <Link to="/">Continue Shopping</Link>
               </button>
-            </div>
+            </div> */}
           </form>
 
           <p className="mt-10 text-center text-sm text-text">

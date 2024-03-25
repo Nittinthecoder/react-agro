@@ -25,7 +25,7 @@
       "id": "2",
       "title": "Sugarcane",
       "description": "Fully Organic and Free from pesticides",
-      "price(per ton)": 3050,
+      "price": 2640,
       "rating": 4.44,
       "stock": 34,
       "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
@@ -104,6 +104,17 @@
       "id": "1",
       "email": "mathewnittin182002@gmail.com",
       "password": "123Bmws!"
+    },
+    {
+      "id": "9c39",
+      "email": "mathewnittin182002@gmail.com",
+      "password": "123Bmws@"
+    },
+    {
+      "id": "a6e1",
+      "email": "mathewnobby@gmail.com",
+      "password": "123Bmws!"
     }
-  ]
+  ],
+  "cart": []
 }

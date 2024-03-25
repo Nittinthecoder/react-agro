@@ -10,6 +10,9 @@ import {
 } from "@heroicons/react/24/outline";
 
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
+import { selectItems } from "../shopping-cart/CartSlice"
 
 const navigation = {
   categories: [
@@ -89,6 +92,9 @@ function classNames(...classes) {
 }
 
 function Navbar({ children }) {
+
+  const items = useSelector(selectItems);
+
   const [open, setOpen] = useState(false);
   return (
     <div className="bg-background">
@@ -429,13 +435,13 @@ function Navbar({ children }) {
                   <a href="#" className="group -m-2 flex items-center p-2">
                     <Link to="/Cart">
                       <ShoppingBagIcon
-                        className="h-6 w-6 flex-shrink-0 text-secondary group-hover:text-primary"
+                        className="h-6 w-6 flex-shrink-0 text-primary "
                         aria-hidden="true"
                       />
                     </Link>
-                    <span className="ml-2 text-sm font-medium text-primary group-hover:text-secondary">
-                      2
-                    </span>
+                    {items.length>0 && <span className="inline-flex items-center rounded-3xl mb-7 -ml-3 bg-black px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-red-600/10">
+                        {items.length}
+                      </span>}
                     <span className="sr-only">items in cart, view bag</span>
                   </a>
                 </div>
