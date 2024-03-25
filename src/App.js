@@ -66,7 +66,7 @@ function App() {
     if(user) {
       dispatch(fetchItemsByUserIdAsync(user.id))
     }
-  }, [dispatch, user]);
+  },[dispatch, user]);
 
   return (
     <div className="App">

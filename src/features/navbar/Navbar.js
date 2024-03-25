@@ -4,7 +4,6 @@ import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition, Menu } from "@headlessui/react";
 import {
   Bars3Icon,
-  // MagnifyingGlassIcon,
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -442,6 +441,9 @@ function Navbar({ children }) {
                     {items.length>0 && <span className="inline-flex items-center rounded-3xl mb-7 -ml-3 bg-black px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-red-600/10">
                         {items.length}
                       </span>}
+                     {/* <span className="inline-flex items-center rounded-3xl mb-7 -ml-3 bg-black px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-red-600/10">
+                        {items.length}
+                      </span> */}
                     <span className="sr-only">items in cart, view bag</span>
                   </a>
                 </div>

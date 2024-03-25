@@ -26,11 +26,11 @@ export function ShoppingCart() {
   };
   const handleRemove = (e, id) => {
     dispatch(deleteItemFromCartAsync(id));
-  };
+  }
 
   return (
     <Navbar>
-      {!items.length && <Navigate to="/" replace={true}></Navigate>}
+     {/* {!items.length && <Navigate to="/" replace={true}></Navigate>} */}
       <div className="bg-background">
         <div className="mx-auto  bg-background max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="border-t border-primary px-4 py-6 sm:px-6">
@@ -83,7 +83,7 @@ export function ShoppingCart() {
 
                         <div className="flex">
                           <button
-                            onClick={(e) => handleRemove(e, item.id)}
+                            onClick={e=> handleRemove(e, item.id)}
                             type="button"
                             className="font-medium text-primary hover:scale-x-95"
                           >
