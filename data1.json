@@ -2,8 +2,8 @@
   "products": [
     {
       "id": "1",
-      "title": "Paddy",
-      "description": "Fully Organic and Free from pesticides",
+      "title": "Fresh Paddy",
+      "description": "Fresh Paddy Harvested from the lush fields of india, our premium paddy is the foundation of great rice. Carefully selected and untouched by processing, our paddy retains its natural goodness and authentic taste. Ideal for those who prefer to mill their rice at home or for agricultural use, our paddy promises freshness and quality in every grain. Experience the essence of pure rice with our premium paddy.",
       "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
       "price": 2640,
       "rating": 4.9,
@@ -12,19 +12,18 @@
       "category": "Wholesale",
       "seller": "linda",
       "Bargain option": "yes",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "images": [
-        "https://cdn.dummyjson.com/product-images/1/1.jpg",
-        "https://cdn.dummyjson.com/product-images/1/2.jpg",
-        "https://cdn.dummyjson.com/product-images/1/3.jpg",
-        "https://cdn.dummyjson.com/product-images/1/4.jpg",
-        "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
+        "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       ]
     },
     {
       "id": "2",
-      "title": "Sugarcane",
-      "description": "Fully Organic and Free from pesticides",
+      "title": "Pure Sugarcane",
+      "description": "Our pure sugarcane is harvested from the finest fields, ensuring sweetness and quality. Use it to sweeten your beverages or add flavor to your desserts.",
       "price": 2640,
       "rating": 4.44,
       "stock": 34,
@@ -33,18 +32,18 @@
       "category": "Wholesale",
       "seller": "linda",
       "Bargain option": "no",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "thumbnail": "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
       "images": [
-        "https://cdn.dummyjson.com/product-images/2/1.jpg",
-        "https://cdn.dummyjson.com/product-images/2/2.jpg",
-        "https://cdn.dummyjson.com/product-images/2/3.jpg",
-        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+        "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+        "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+        "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+        "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D"
       ]
     },
     {
       "id": "3",
-      "title": "Wheat",
-      "description": "Fully Organic and Free from pesticides",
+      "title": "Organic Wheat",
+      "description": "Our organic wheat is sourced from trusted farmers who use sustainable practices. It's perfect for baking bread, making pasta, or adding to your favorite recipes.",
       "price": 1249,
       "discountPercentage": 15.46,
       "rating": 4.09,
@@ -54,15 +53,18 @@
       "category": "Wholesale",
       "seller": "linda",
       "Bargain option": "yes",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+      "thumbnail": "https://media.istockphoto.com/id/494258449/photo/spelt.jpg?s=1024x1024&w=is&k=20&c=UTzgYQuEzUStj3qf5We_tBvxe8DqmVr83IahXOmerNw=",
       "images": [
-        "https://cdn.dummyjson.com/product-images/3/1.jpg"
+        "https://media.istockphoto.com/id/494258449/photo/spelt.jpg?s=1024x1024&w=is&k=20&c=UTzgYQuEzUStj3qf5We_tBvxe8DqmVr83IahXOmerNw=",
+        "https://media.istockphoto.com/id/494258449/photo/spelt.jpg?s=1024x1024&w=is&k=20&c=UTzgYQuEzUStj3qf5We_tBvxe8DqmVr83IahXOmerNw=",
+        "https://media.istockphoto.com/id/494258449/photo/spelt.jpg?s=1024x1024&w=is&k=20&c=UTzgYQuEzUStj3qf5We_tBvxe8DqmVr83IahXOmerNw=",
+        "https://media.istockphoto.com/id/494258449/photo/spelt.jpg?s=1024x1024&w=is&k=20&c=UTzgYQuEzUStj3qf5We_tBvxe8DqmVr83IahXOmerNw="
       ]
     },
     {
       "id": "4",
-      "title": "OPPOF19",
-      "description": "Fully Organic and Free from pesticides",
+      "title": "Premium Cotton",
+      "description": "Our premium cotton is soft, durable, and perfect for all your crafting needs. Whether you're making clothes, quilts, or home decor, our cotton is the ideal choice.",
       "price": 280,
       "rating": 4.3,
       "stock": 123,
@@ -82,8 +84,8 @@
     },
     {
       "id": "5",
-      "title": "Cotton",
-      "description": "Fully Organic and Free from pesticides",
+      "title": "Natural Rubber",
+      "description": "Our natural rubber is sourced from rubber trees and is perfect for industrial use or crafting projects. It's strong, durable, and eco-friendly.",
       "price": 499,
       "discountPercentage": 10.58,
       "rating": 4.09,
@@ -104,7 +106,35 @@
       "id": "2ccf",
       "email": "mathewnittin182002@gmail.com",
       "password": "1234Bmws!",
-      "addresses": []
+      "addresses": [
+        {
+          "name": "Velmurugan",
+          "email": "vvelmurugan0011@gmail.com",
+          "phone": "08610685517",
+          "street": "Swami Mudaliar St",
+          "city": "Puducherry",
+          "state": "Pondicherry",
+          "pinCode": "605001"
+        },
+        {
+          "name": "Nittin Nobby Mathew",
+          "email": "mathewnittin182002@gmail.com",
+          "phone": "08610685517",
+          "street": "Swami Mudaliar St",
+          "city": "Puducherry",
+          "state": "Pondicherry",
+          "pinCode": "605001"
+        },
+        {
+          "name": "Pranshanth",
+          "email": "pranshanth123@gmail.com",
+          "phone": "8610685517",
+          "street": "Swami Mudaliar St",
+          "city": "Puducherry",
+          "state": "Pondicherry",
+          "pinCode": "605006"
+        }
+      ]
     },
     {
       "id": "d239",
@@ -113,51 +143,157 @@
       "addresses": []
     }
   ],
-  "cart": [
+  "cart": [],
+  "orders": [
     {
-      "id": "1",
-      "title": "Paddy",
-      "description": "Fully Organic and Free from pesticides",
-      "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
-      "price": 2640,
-      "rating": 4.9,
-      "stock": 94,
-      "brand": "AgroXPlanet",
-      "category": "Wholesale",
-      "seller": "linda",
-      "Bargain option": "yes",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/1/1.jpg",
-        "https://cdn.dummyjson.com/product-images/1/2.jpg",
-        "https://cdn.dummyjson.com/product-images/1/3.jpg",
-        "https://cdn.dummyjson.com/product-images/1/4.jpg",
-        "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
+      "id": "c540",
+      "items": [
+        {
+          "id": "1",
+          "title": "Fresh Paddy",
+          "description": "Fresh Paddy Harvested from the lush fields of india, our premium paddy is the foundation of great rice. Carefully selected and untouched by processing, our paddy retains its natural goodness and authentic taste. Ideal for those who prefer to mill their rice at home or for agricultural use, our paddy promises freshness and quality in every grain. Experience the essence of pure rice with our premium paddy.",
+          "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+          "price": 2640,
+          "rating": 4.9,
+          "stock": 94,
+          "brand": "AgroXPlanet",
+          "category": "Wholesale",
+          "seller": "linda",
+          "Bargain option": "yes",
+          "thumbnail": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "images": [
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          ],
+          "quantity": 5,
+          "user": "2ccf",
+          "product": "1"
+        }
       ],
-      "quantity": 1,
-      "user": "2ccf"
+      "totalAmount": 13200,
+      "totalItems": 5,
+      "user": {
+        "id": "2ccf",
+        "email": "mathewnittin182002@gmail.com",
+        "password": "1234Bmws!",
+        "addresses": [
+          {
+            "name": "Velmurugan",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Nittin Nobby Mathew",
+            "email": "mathewnittin182002@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Pranshanth",
+            "email": "pranshanth123@gmail.com",
+            "phone": "8610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605006"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Velmurugan",
+        "email": "vvelmurugan0011@gmail.com",
+        "phone": "08610685517",
+        "street": "Swami Mudaliar St",
+        "city": "Puducherry",
+        "state": "Pondicherry",
+        "pinCode": "605001"
+      },
+      "status": "pending"
     },
     {
-      "id": "2",
-      "title": "Sugarcane",
-      "description": "Fully Organic and Free from pesticides",
-      "price": 2640,
-      "rating": 4.44,
-      "stock": 34,
-      "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
-      "brand": "AgroXPlanet",
-      "category": "Wholesale",
-      "seller": "linda",
-      "Bargain option": "no",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/2/1.jpg",
-        "https://cdn.dummyjson.com/product-images/2/2.jpg",
-        "https://cdn.dummyjson.com/product-images/2/3.jpg",
-        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "id": "6c94",
+      "items": [
+        {
+          "id": "2",
+          "title": "Pure Sugarcane",
+          "description": "Our pure sugarcane is harvested from the finest fields, ensuring sweetness and quality. Use it to sweeten your beverages or add flavor to your desserts.",
+          "price": 2640,
+          "rating": 4.44,
+          "stock": 34,
+          "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+          "brand": "AgroXPlanet",
+          "category": "Wholesale",
+          "seller": "linda",
+          "Bargain option": "no",
+          "thumbnail": "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+          "images": [
+            "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+            "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+            "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+            "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D"
+          ],
+          "quantity": 5,
+          "user": "2ccf",
+          "product": "2"
+        }
       ],
-      "quantity": 1,
-      "user": "2ccf"
+      "totalAmount": 13200,
+      "totalItems": 5,
+      "user": {
+        "id": "2ccf",
+        "email": "mathewnittin182002@gmail.com",
+        "password": "1234Bmws!",
+        "addresses": [
+          {
+            "name": "Velmurugan",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Nittin Nobby Mathew",
+            "email": "mathewnittin182002@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Pranshanth",
+            "email": "pranshanth123@gmail.com",
+            "phone": "8610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605006"
+          }
+        ]
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Pranshanth",
+        "email": "pranshanth123@gmail.com",
+        "phone": "8610685517",
+        "street": "Swami Mudaliar St",
+        "city": "Puducherry",
+        "state": "Pondicherry",
+        "pinCode": "605006"
+      },
+      "status": "pending"
     }
   ]
 }

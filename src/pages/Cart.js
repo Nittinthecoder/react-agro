@@ -2,12 +2,13 @@
 import { ShoppingCart } from "../features/shopping-cart/ShoppingCart"
 
 
-function Home() {
+function Cart() {
   return (
-    <div>
+    <div className='bg-background h-screen'>
+      
         <ShoppingCart />
     </div>
   )
 }
 
-export default Home
+export default Cart

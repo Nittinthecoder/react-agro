@@ -4,6 +4,7 @@ import {
   fetchItemsByUserId,
   updateItem,
   deleteItemFromCart,
+  resetCart,
 } from "../shopping-cart/CartAPI";
 
 const initialState = {
@@ -29,8 +30,16 @@ export const fetchItemsByUserIdAsync = createAsyncThunk(
   }
 );
 
+export const resetCartAsync = createAsyncThunk(
+  "cart/resetCart",
+  async (userId) => {
+    const response = await resetCart(userId);
+    return response.data;
+  }
+);
+
 export const updateItemsAsync = createAsyncThunk(
-  "cart/updateCart",
+  "cart/updateItem",
   async (update) => {
     const response = await updateItem(update);
     // The value we return becomes the `fulfilled` action payload
@@ -47,7 +56,7 @@ export const deleteItemFromCartAsync = createAsyncThunk(
   }
 );
 
-export const counterSlice = createSlice({
+export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
@@ -91,12 +100,19 @@ export const counterSlice = createSlice({
           (items) => items.id === action.payload.id
         );
         state.items.splice(index, 1);
+      })
+      .addCase(resetCartAsync.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(resetCartAsync.fulfilled, (state) => {
+        state.status = "idle";
+        state.items = [];
       });
   },
 });
 
-export const { increment } = counterSlice.actions;
+export const { increment } = cartSlice.actions;
 
 export const selectItems = (state) => state.cart.items;
 
-export default counterSlice.reducer;
+export default cartSlice.reducer;

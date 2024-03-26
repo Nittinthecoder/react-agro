@@ -3,7 +3,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { Link, Navigate } from "react-router-dom";
+import { Link}  from "react-router-dom";
 
 import {
   selectItems,
@@ -14,7 +14,7 @@ import Navbar from "../navbar/Navbar";
 
 export function ShoppingCart() {
   const dispatch = useDispatch();
-  const items = useSelector(selectItems);
+  const items = useSelector(selectItems); 
   const totalAmount = items.reduce(
     (amount, item) => item.price * item.quantity + amount,
     0
@@ -30,7 +30,6 @@ export function ShoppingCart() {
 
   return (
     <Navbar>
-     {/* {!items.length && <Navigate to="/" replace={true}></Navigate>} */}
       <div className="bg-background">
         <div className="mx-auto  bg-background max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="border-t border-primary px-4 py-6 sm:px-6">

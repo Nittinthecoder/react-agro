@@ -81,8 +81,8 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 };
 const userNavigation = [
-  { name: 'Your Profile', link: '/' },
-  { name: 'Settings', link: '/' },
+  { name: 'My Profile', link: '/profile' },
+  { name: 'My Orders', link: '/orders' },
   { name: 'Sign out', link: '/login' },
 ];
 
@@ -93,7 +93,6 @@ function classNames(...classes) {
 function Navbar({ children }) {
 
   const items = useSelector(selectItems);
-
   const [open, setOpen] = useState(false);
   return (
     <div className="bg-background">
@@ -276,10 +275,11 @@ function Navbar({ children }) {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-background">
+
+      <header className="relative ">
         <nav
           aria-label="Top"
-          className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+          className=" max-w-7xl  sm:px-6 lg:px-8"
         >
           <div>
             <div className="flex h-16 items-center">
@@ -468,7 +468,7 @@ function Navbar({ children }) {
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
                         >
-                          <Menu.Items className="absolute  z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <Menu.Items className="absolute  z-10 mt-2 w-48 right-3 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none lg:origin-top-right lg:right-14">
                             {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
