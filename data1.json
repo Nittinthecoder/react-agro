@@ -22,7 +22,7 @@
     },
     {
       "id": "2",
-      "title": "Pure Sugarcane",
+      "title": "Sugarcane",
       "description": "Our pure sugarcane is harvested from the finest fields, ensuring sweetness and quality. Use it to sweeten your beverages or add flavor to your desserts.",
       "price": 2640,
       "rating": 4.44,
@@ -73,19 +73,18 @@
       "category": "Wholesale",
       "seller": "linda",
       "Bargain option": "no",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1601379326855-333ada09757e?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "images": [
-        "https://cdn.dummyjson.com/product-images/4/1.jpg",
-        "https://cdn.dummyjson.com/product-images/4/2.jpg",
-        "https://cdn.dummyjson.com/product-images/4/3.jpg",
-        "https://cdn.dummyjson.com/product-images/4/4.jpg",
-        "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg"
+        "https://images.unsplash.com/photo-1601379326855-333ada09757e?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1601379326855-333ada09757e?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1601379326855-333ada09757e?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1601379326855-333ada09757e?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       ]
     },
     {
       "id": "5",
-      "title": "Natural Rubber",
-      "description": "Our natural rubber is sourced from rubber trees and is perfect for industrial use or crafting projects. It's strong, durable, and eco-friendly.",
+      "title": "Fresh Corn (Maize)",
+      "description": "Our fresh corn is harvested at peak ripeness to ensure maximum flavor and sweetness. Enjoy it boiled, grilled, or as an ingredient in your favorite dishes.",
       "price": 499,
       "discountPercentage": 10.58,
       "rating": 4.09,
@@ -93,11 +92,69 @@
       "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
       "brand": "AgroXPlanet",
       "seller": "linda",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
+      "thumbnail": "https://images.unsplash.com/photo-1692607931390-3a768f3d1a53?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "images": [
-        "https://cdn.dummyjson.com/product-images/5/1.jpg",
-        "https://cdn.dummyjson.com/product-images/5/2.jpg",
-        "https://cdn.dummyjson.com/product-images/5/3.jpg"
+        "https://images.unsplash.com/photo-1692607931390-3a768f3d1a53?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1692607931390-3a768f3d1a53?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1692607931390-3a768f3d1a53?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1692607931390-3a768f3d1a53?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Golden Wheat",
+      "description": "Our fresh corn is harvested at peak ripeness to ensure maximum flavor and sweetness. Enjoy it boiled, grilled, or as an ingredient in your favorite dishes.",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "rating": 4.09,
+      "stock": 32,
+      "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+      "brand": "AgroXPlanet",
+      "seller": "linda",
+      "thumbnail": "https://media.istockphoto.com/id/1737694524/photo/ripe-wheat-grains-flying-on-white-background.jpg?s=1024x1024&w=is&k=20&c=rYQOPBl1eYCaGHb5OF0yo4sl_aDeqzGXQzAR13pdg3o=",
+      "images": [
+        "https://media.istockphoto.com/id/1737694524/photo/ripe-wheat-grains-flying-on-white-background.jpg?s=1024x1024&w=is&k=20&c=rYQOPBl1eYCaGHb5OF0yo4sl_aDeqzGXQzAR13pdg3o=",
+        "https://media.istockphoto.com/id/1737694524/photo/ripe-wheat-grains-flying-on-white-background.jpg?s=1024x1024&w=is&k=20&c=rYQOPBl1eYCaGHb5OF0yo4sl_aDeqzGXQzAR13pdg3o=",
+        "https://media.istockphoto.com/id/1737694524/photo/ripe-wheat-grains-flying-on-white-background.jpg?s=1024x1024&w=is&k=20&c=rYQOPBl1eYCaGHb5OF0yo4sl_aDeqzGXQzAR13pdg3o=",
+        "https://media.istockphoto.com/id/1737694524/photo/ripe-wheat-grains-flying-on-white-background.jpg?s=1024x1024&w=is&k=20&c=rYQOPBl1eYCaGHb5OF0yo4sl_aDeqzGXQzAR13pdg3o="
+      ]
+    },
+    {
+      "id": "7",
+      "title": "ADT 35-PADDY",
+      "description": "Our fresh corn is harvested at peak ripeness to ensure maximum flavor and sweetness. Enjoy it boiled, grilled, or as an ingredient in your favorite dishes.",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "rating": 4.09,
+      "stock": 32,
+      "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+      "brand": "AgroXPlanet",
+      "seller": "linda",
+      "thumbnail": "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg",
+      "images": [
+        "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg",
+        "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg",
+        "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg",
+        "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "BPT - PADDY",
+      "description": "Our fresh corn is harvested at peak ripeness to ensure maximum flavor and sweetness. Enjoy it boiled, grilled, or as an ingredient in your favorite dishes.",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "rating": 4.09,
+      "stock": 32,
+      "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+      "brand": "AgroXPlanet",
+      "seller": "linda",
+      "thumbnail": "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+      "images": [
+        "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+        "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+        "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+        "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png"
       ]
     }
   ],
@@ -133,6 +190,24 @@
           "city": "Puducherry",
           "state": "Pondicherry",
           "pinCode": "605006"
+        },
+        {
+          "name": "Rakshith",
+          "email": "vvelmurugan0011@gmail.com",
+          "phone": "8610685517",
+          "street": "Swami Mudaliar St",
+          "city": "Puducherry",
+          "state": "Pondicherry",
+          "pinCode": "605001"
+        },
+        {
+          "name": "Nobby Mathew",
+          "email": "mathewnittin182002@gmail.com",
+          "phone": "08610685517",
+          "street": "Swami Mudaliar St",
+          "city": "Puducherry",
+          "state": "Pondicherry",
+          "pinCode": "605001"
         }
       ]
     },
@@ -146,7 +221,91 @@
   "cart": [],
   "orders": [
     {
-      "id": "c540",
+      "id": "7d60",
+      "items": [
+        {
+          "id": "1",
+          "title": "Fresh Paddy",
+          "description": "Fresh Paddy Harvested from the lush fields of india, our premium paddy is the foundation of great rice. Carefully selected and untouched by processing, our paddy retains its natural goodness and authentic taste. Ideal for those who prefer to mill their rice at home or for agricultural use, our paddy promises freshness and quality in every grain. Experience the essence of pure rice with our premium paddy.",
+          "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+          "price": 2640,
+          "rating": 4.9,
+          "stock": 94,
+          "brand": "AgroXPlanet",
+          "category": "Wholesale",
+          "seller": "linda",
+          "Bargain option": "yes",
+          "thumbnail": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "images": [
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          ],
+          "quantity": 1,
+          "user": "2ccf",
+          "product": "1"
+        }
+      ],
+      "totalAmount": 2640,
+      "totalItems": 1,
+      "user": {
+        "id": "2ccf",
+        "email": "mathewnittin182002@gmail.com",
+        "password": "1234Bmws!",
+        "addresses": [
+          {
+            "name": "Velmurugan",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Nittin Nobby Mathew",
+            "email": "mathewnittin182002@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Pranshanth",
+            "email": "pranshanth123@gmail.com",
+            "phone": "8610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605006"
+          },
+          {
+            "name": "Rakshith",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "8610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Rakshith",
+        "email": "vvelmurugan0011@gmail.com",
+        "phone": "8610685517",
+        "street": "Swami Mudaliar St",
+        "city": "Puducherry",
+        "state": "Pondicherry",
+        "pinCode": "605001"
+      },
+      "status": "Order delivered"
+    },
+    {
+      "id": "d690",
       "items": [
         {
           "id": "1",
@@ -205,6 +364,15 @@
             "city": "Puducherry",
             "state": "Pondicherry",
             "pinCode": "605006"
+          },
+          {
+            "name": "Rakshith",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "8610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
           }
         ]
       },
@@ -221,34 +389,34 @@
       "status": "pending"
     },
     {
-      "id": "6c94",
+      "id": "54dc",
       "items": [
         {
-          "id": "2",
-          "title": "Pure Sugarcane",
-          "description": "Our pure sugarcane is harvested from the finest fields, ensuring sweetness and quality. Use it to sweeten your beverages or add flavor to your desserts.",
-          "price": 2640,
-          "rating": 4.44,
-          "stock": 34,
+          "id": "1",
+          "title": "Fresh Paddy",
+          "description": "Fresh Paddy Harvested from the lush fields of india, our premium paddy is the foundation of great rice. Carefully selected and untouched by processing, our paddy retains its natural goodness and authentic taste. Ideal for those who prefer to mill their rice at home or for agricultural use, our paddy promises freshness and quality in every grain. Experience the essence of pure rice with our premium paddy.",
           "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+          "price": 2640,
+          "rating": 4.9,
+          "stock": 94,
           "brand": "AgroXPlanet",
           "category": "Wholesale",
           "seller": "linda",
-          "Bargain option": "no",
-          "thumbnail": "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+          "Bargain option": "yes",
+          "thumbnail": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "images": [
-            "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
-            "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
-            "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
-            "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D"
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           ],
-          "quantity": 5,
+          "quantity": 3,
           "user": "2ccf",
-          "product": "2"
+          "product": "1"
         }
       ],
-      "totalAmount": 13200,
-      "totalItems": 5,
+      "totalAmount": 7920,
+      "totalItems": 3,
       "user": {
         "id": "2ccf",
         "email": "mathewnittin182002@gmail.com",
@@ -280,18 +448,142 @@
             "city": "Puducherry",
             "state": "Pondicherry",
             "pinCode": "605006"
+          },
+          {
+            "name": "Rakshith",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "8610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
           }
         ]
       },
       "paymentMethod": "card",
       "selectedAddress": {
-        "name": "Pranshanth",
-        "email": "pranshanth123@gmail.com",
+        "name": "Rakshith",
+        "email": "vvelmurugan0011@gmail.com",
         "phone": "8610685517",
         "street": "Swami Mudaliar St",
         "city": "Puducherry",
         "state": "Pondicherry",
-        "pinCode": "605006"
+        "pinCode": "605001"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "1cf0",
+      "items": [
+        {
+          "id": "7",
+          "title": "ADT 35-PADDY",
+          "description": "Our fresh corn is harvested at peak ripeness to ensure maximum flavor and sweetness. Enjoy it boiled, grilled, or as an ingredient in your favorite dishes.",
+          "price": 499,
+          "discountPercentage": 10.58,
+          "rating": 4.09,
+          "stock": 32,
+          "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+          "brand": "AgroXPlanet",
+          "seller": "linda",
+          "thumbnail": "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg",
+          "images": [
+            "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg",
+            "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg",
+            "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg",
+            "https://5.imimg.com/data5/ANDROID/Default/2022/11/BD/XL/NG/52128106/product-jpeg-250x250.jpg"
+          ],
+          "quantity": 1,
+          "user": "2ccf",
+          "product": "7"
+        },
+        {
+          "id": "1",
+          "title": "Fresh Paddy",
+          "description": "Fresh Paddy Harvested from the lush fields of india, our premium paddy is the foundation of great rice. Carefully selected and untouched by processing, our paddy retains its natural goodness and authentic taste. Ideal for those who prefer to mill their rice at home or for agricultural use, our paddy promises freshness and quality in every grain. Experience the essence of pure rice with our premium paddy.",
+          "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+          "price": 2640,
+          "rating": 4.9,
+          "stock": 94,
+          "brand": "AgroXPlanet",
+          "category": "Wholesale",
+          "seller": "linda",
+          "Bargain option": "yes",
+          "thumbnail": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "images": [
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          ],
+          "quantity": 1,
+          "user": "2ccf",
+          "product": "1"
+        }
+      ],
+      "totalAmount": 3139,
+      "totalItems": 2,
+      "user": {
+        "id": "2ccf",
+        "email": "mathewnittin182002@gmail.com",
+        "password": "1234Bmws!",
+        "addresses": [
+          {
+            "name": "Velmurugan",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Nittin Nobby Mathew",
+            "email": "mathewnittin182002@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Pranshanth",
+            "email": "pranshanth123@gmail.com",
+            "phone": "8610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605006"
+          },
+          {
+            "name": "Rakshith",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "8610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Nobby Mathew",
+            "email": "mathewnittin182002@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Nobby Mathew",
+        "email": "mathewnittin182002@gmail.com",
+        "phone": "08610685517",
+        "street": "Swami Mudaliar St",
+        "city": "Puducherry",
+        "state": "Pondicherry",
+        "pinCode": "605001"
       },
       "status": "pending"
     }

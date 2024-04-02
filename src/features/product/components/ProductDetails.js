@@ -16,21 +16,18 @@ import { selectLoggedInUser } from "../../auth/authSlice";
 
 import { addToCartAsync } from "../../shopping-cart/CartSlice";
 
-const colors = [
-    { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
-    { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
-    { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
+  const size = [
+    { name: "WHOLESALE", inStock: true },
+    { name: "RETAIL", inStock: true },
   ]
   
 const sizes = [
-    { name: "XXS", inStock: false },
-    { name: "XS", inStock: true },
-    { name: "S", inStock: true },
-    { name: "M", inStock: true },
-    { name: "L", inStock: true },
-    { name: "XL", inStock: true },
-    { name: "2XL", inStock: true },
-    { name: "3XL", inStock: true },
+    { name: "1KG", inStock: true },
+    { name: "2KG", inStock: true },
+    { name: "3KG", inStock: true },
+    { name: "4KG", inStock: true },
+    { name: "5KG", inStock: true },
+
   ]
 
 function classNames(...classes) {
@@ -38,7 +35,7 @@ function classNames(...classes) {
 }
 
 export default function ProductDetails() {
-  const [selectedColor, setSelectedColor] = useState(colors[0]);
+  // const [selectedColor, setSelectedColor] = useState(colors[0]);
   const [selectedSize, setSelectedSize] = useState(sizes[2]);
   const user = useSelector(selectLoggedInUser);
   const product = useSelector(selectProductById);
@@ -147,7 +144,7 @@ export default function ProductDetails() {
                 {/* Reviews */}
                 <form className="mt-10">
                   {/* Colors */}
-                  <div>
+                  {/* <div>
                     <h3 className="text-sm font-medium text-gray-900">Color</h3>
 
                     <RadioGroup
@@ -159,13 +156,13 @@ export default function ProductDetails() {
                         Choose a color
                       </RadioGroup.Label>
                       <div className="flex items-center space-x-3">
-                        {colors.map((color) => (
+                        {col.map((color) => (
                           <RadioGroup.Option
-                            key={color.name}
+                            key={col.name}
                             value={color}
                             className={({ active, checked }) =>
                               classNames(
-                                color.selectedClass,
+                                col.selectedClass,
                                 active && checked ? "ring ring-offset-1" : "",
                                 !active && checked ? "ring-2" : "",
                                 "relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
@@ -186,7 +183,85 @@ export default function ProductDetails() {
                         ))}
                       </div>
                     </RadioGroup>
+                  </div> */}
+                  
+                  {/* Measurement */}
+                  <div className="mt-10">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-sm font-medium text-gray-900">
+                        Purchase type
+                      </h3>
+                    </div>
+
+                    <RadioGroup
+                      value={selectedSize}
+                      onChange={setSelectedSize}
+                      className="mt-4"
+                    >
+                      <RadioGroup.Label className="sr-only">
+                        
+                      </RadioGroup.Label>
+                      <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
+                        {size.map((size) => (
+                          <RadioGroup.Option
+                            key={size.name}
+                            value={size}
+                            disabled={!size.inStock}
+                            className={({ active }) =>
+                              classNames(
+                                size.inStock
+                                  ? "cursor-pointer bg-black text-white shadow-sm w-[89px]"
+                                  : "cursor-not-allowed bg-gray-50 text-gray-200",
+                                active ? "ring-2 ring-primary" : "",
+                                "group relative flex items-center justify-center rounded-md border px-5 text-xs font-bold uppercase hover:bg-secondary focus:outline-none sm:flex-1 sm:py-6"
+                              )
+                            }
+                          >
+                            {({ active, checked }) => (
+                              <>
+                                <RadioGroup.Label as="span">
+                                  {size.name}
+                                </RadioGroup.Label>
+                                {size.inStock ? (
+                                  <span
+                                    className={classNames(
+                                      active ? "border" : "border-2",
+                                      checked
+                                        ? "border-primary bg-secondary "
+                                        : "border-transparent",
+                                      "pointer-events-none absolute -inset-px rounded-md"
+                                    )}
+                                    aria-hidden="true"
+                                  />
+                                ) : (
+                                  <span
+                                    aria-hidden="true"
+                                    className="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200"
+                                  >
+                                    <svg
+                                      className="absolute inset-0 h-full w-full stroke-2 text-gray-200"
+                                      viewBox="0 0 100 100"
+                                      preserveAspectRatio="none"
+                                      stroke="currentColor"
+                                    >
+                                      <line
+                                        x1={0}
+                                        y1={100}
+                                        x2={100}
+                                        y2={0}
+                                        vectorEffect="non-scaling-stroke"
+                                      />
+                                    </svg>
+                                  </span>
+                                )}
+                              </>
+                            )}
+                          </RadioGroup.Option>
+                        ))}
+                      </div>
+                    </RadioGroup>
                   </div>
+
 
                   {/* Sizes */}
                   <div className="mt-10">

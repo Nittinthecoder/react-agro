@@ -6,12 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'text': '#030803',
-        'background': '#f0fbef',
-        'primary': '#38de2d',
-        'secondary': '#83f57b',
-        'accent': '#48fe3b',
+        'text': '#161a0d',
+        'background': '#f6f9f2',
+        'primary': '#9abb5d',
+        'secondary': '#c0d696',
+        'accent': '#a8ca6a',
        },
+       
        gridTemplateRows: {
         '[auto,auto,1fr]': 'auto auto 1fr',
       },
@@ -19,3 +20,4 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/aspect-ratio'),require('@tailwindcss/forms')],
 }
+

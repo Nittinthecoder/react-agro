@@ -279,10 +279,10 @@ function Navbar({ children }) {
       <header className="relative ">
         <nav
           aria-label="Top"
-          className=" max-w-7xl  sm:px-6 lg:px-8"
+          className=" max-w-8xl px-4   sm:px-6 lg:px-8"
         >
           <div>
-            <div className="flex h-16 items-center">
+            <div className="flex h-16 items-center justify-between">
               {/* menu button in mobile devices */}
               <button
                 type="button"

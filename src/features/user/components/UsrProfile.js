@@ -1,16 +1,28 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectLoggedInUser } from "../../auth/authSlice";
+// import { selectLoggedInUser } from "../../auth/authSlice";
+import { selectUserInfo } from "../userSlice";
 
 export default function UsrProfile() {
-  const user = useSelector(selectLoggedInUser);
+  // const user = useSelector(selectLoggedInUser);
+  const user = useSelector(selectUserInfo);
+
+  console.log(user);
+
+  const handleEdit = (e, index) => {
+
+  }
+  
+  const handleRemove = (e, index) => {
+    
+  }
   return (
     <div className="bg-background h-screen">
       <div className="mx-auto  bg-background max-w-7xl px-4 sm:px-6 lg:px-8 mb-5 ">
         <div className="border-t border-primary px-4 py-6 sm:px-6">
           <h1 className="text-4xl  font-bold tracking-tight text-gray-900">
-            Name : {user.addresses.name ? user.addresses.name : "NEW USER"}
+            Name : {user.addresses.name ? user.addresses.name : "NITTIN"}
           </h1>
           <h3 className="text-xl my-5 font-bold tracking-tight text-red-900">
             Email : {user.email ? user.email : "NEW USER"}
@@ -20,7 +32,7 @@ export default function UsrProfile() {
 
         <div className="border-t border-primary px-4 py-6 sm:px-6">
           <p className="mt-0.5 text-sm text-gray-500"> Address :</p>
-          {user.addresses.map((address) => (
+          {user.addresses.map((address, index) => (
             <div className="flex justify-between gap-x-6 px-5 py-5 mt-4 border-solid border-2 border-accent">
               <div className="flex gap-x-4">
                 <div className="min-w-0 flex-auto">
@@ -42,6 +54,22 @@ export default function UsrProfile() {
                 <p className="text-sm leading-6 text-gray-500">
                   {address.city}
                 </p>
+              </div>
+              <div className="hidden sm:flex sm:flex-col sm:items-end">
+                <button
+                  onClick={(e) => handleEdit(e, index)}
+                  type="button"
+                  className="font-medium text-text  hover:text-primary"
+                >
+                  Edit
+                </button>
+                <button
+                  onClick={(e) => handleRemove(e, index)}
+                  type="button"
+                  className="font-medium text-text  hover:text-primary"
+                >
+                  Remove
+                </button>
               </div>
             </div>
           ))}
