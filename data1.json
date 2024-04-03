@@ -172,6 +172,24 @@
           "city": "Puducherry",
           "state": "Pondicherry",
           "pinCode": "605001"
+        },
+        {
+          "name": "Pranshanth",
+          "email": "pranshanth123@gmail.com",
+          "phone": "08610685517",
+          "street": "Swami Mudaliar St",
+          "city": "Puducherry",
+          "state": "Pondicherry",
+          "pinCode": "605006"
+        },
+        {
+          "name": "Velmurugan",
+          "email": "vvelmurugan0011@gmail.com",
+          "phone": "08610685517",
+          "street": "Swami Mudaliar St",
+          "city": "Puducherry",
+          "state": "Pondicherry",
+          "pinCode": "605001"
         }
       ]
     },
@@ -182,31 +200,7 @@
       "addresses": []
     }
   ],
-  "cart": [
-    {
-      "id": "1",
-      "title": "Fresh Paddy",
-      "description": "Fresh Paddy Harvested from the lush fields of india, our premium paddy is the foundation of great rice. Carefully selected and untouched by processing, our paddy retains its natural goodness and authentic taste. Ideal for those who prefer to mill their rice at home or for agricultural use, our paddy promises freshness and quality in every grain. Experience the essence of pure rice with our premium paddy.",
-      "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
-      "price": 2640,
-      "rating": 4.9,
-      "stock": 94,
-      "brand": "AgroXPlanet",
-      "category": "Wholesale",
-      "seller": "linda",
-      "Bargain option": "yes",
-      "thumbnail": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "images": [
-        "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ],
-      "quantity": 1,
-      "user": "2ccf",
-      "product": "1"
-    }
-  ],
+  "cart": [],
   "orders": [
     {
       "id": "7d60",
@@ -566,6 +560,81 @@
       "paymentMethod": "cash",
       "selectedAddress": {
         "name": "Nobby Mathew",
+        "email": "mathewnittin182002@gmail.com",
+        "phone": "08610685517",
+        "street": "Swami Mudaliar St",
+        "city": "Puducherry",
+        "state": "Pondicherry",
+        "pinCode": "605001"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "36d7",
+      "items": [
+        {
+          "id": "1",
+          "title": "Fresh Paddy",
+          "description": "Fresh Paddy Harvested from the lush fields of india, our premium paddy is the foundation of great rice. Carefully selected and untouched by processing, our paddy retains its natural goodness and authentic taste. Ideal for those who prefer to mill their rice at home or for agricultural use, our paddy promises freshness and quality in every grain. Experience the essence of pure rice with our premium paddy.",
+          "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
+          "price": 2640,
+          "rating": 4.9,
+          "stock": 94,
+          "brand": "AgroXPlanet",
+          "category": "Wholesale",
+          "seller": "linda",
+          "Bargain option": "yes",
+          "thumbnail": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "images": [
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          ],
+          "quantity": 5,
+          "user": "2ccf",
+          "product": "1"
+        }
+      ],
+      "totalAmount": 13200,
+      "totalItems": 5,
+      "user": {
+        "id": "2ccf",
+        "email": "mathewnittin182002@gmail.com",
+        "password": "1234Bmws!",
+        "addresses": [
+          {
+            "name": "Nittin Nobby Mathew",
+            "email": "mathewnittin182002@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          },
+          {
+            "name": "Pranshanth",
+            "email": "pranshanth123@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605006"
+          },
+          {
+            "name": "Velmurugan",
+            "email": "vvelmurugan0011@gmail.com",
+            "phone": "08610685517",
+            "street": "Swami Mudaliar St",
+            "city": "Puducherry",
+            "state": "Pondicherry",
+            "pinCode": "605001"
+          }
+        ]
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Nittin Nobby Mathew",
         "email": "mathewnittin182002@gmail.com",
         "phone": "08610685517",
         "street": "Swami Mudaliar St",

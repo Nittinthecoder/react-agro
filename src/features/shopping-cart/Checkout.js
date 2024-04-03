@@ -72,11 +72,11 @@ function Checkout() {
     <>
       {!items.length && <Navigate to="/" replace={true}></Navigate>}
       {currentOrder && <Navigate to={`/ordersucess/${currentOrder.id}`} replace={true}></Navigate>}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-background">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
+      <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8 h-screen bg-background">
+        <div className="grid grid-cols-1 gap-x-8 relative top-60 gap-y-10 lg:grid-cols-5">
           <div className="lg:col-span-3">
             <form
-              className="bg-background px-5 py-12 mt-12"
+              className=" px-5 py-12 mt-12"
               noValidate
               onSubmit={handleSubmit((data) => {
                 console.log(data);
@@ -89,8 +89,8 @@ function Checkout() {
                 reset();
               })}
             >
-              <div className="space-y-12">
-                <div className="border-b border-primary pb-12">
+              <div className="">
+                {/* <div className="border-b border-primary pb-12">
                   <h2 className="text-2xl font-semibold leading-7 text-gray-900">
                     Personal Information
                   </h2>
@@ -269,9 +269,9 @@ function Checkout() {
                   >
                     Add Address
                   </button>
-                </div>
+                </div> */}
 
-                <div className="border-b border-primary pb-12">
+                <div className="">
                   <h2 className="text-base font-semibold leading-7 text-gray-900">
                     Addresses
                   </h2>
@@ -290,7 +290,7 @@ function Checkout() {
                             name="address"
                             type="radio"
                             value={index}
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                            className="h-4 w-4 border-gray-300 text-text focus:ring-primary"
                           />
                           <div className="min-w-0 flex-auto">
                             <p className="text-sm font-semibold leading-6 text-gray-900">
@@ -333,7 +333,7 @@ function Checkout() {
                             value="cash"
                             type="radio"
                             checked={paymentMethod === "cash"}
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                            className="h-4 w-4 border-gray-300 text-text focus:ring-primary"
                           />
                           <label
                             htmlFor="cash"
@@ -350,7 +350,7 @@ function Checkout() {
                             checked={paymentMethod === "card"}
                             value="card"
                             type="radio"
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                            className="h-4 w-4 border-gray-300 text-text focus:ring-primary"
                           />
                           <label
                             htmlFor="card"
@@ -368,7 +368,7 @@ function Checkout() {
           </div>
           <div className="lg:col-span-2">
             <div className="mx-auto mt-12 bg-background max-w-7xl px-0 sm:px-0 lg:px-0">
-              <div className="border-t border-text px-4 py-6 sm:px-6">
+              <div className="px-4 py-6 sm:px-6">
                 <h1 className="text-4xl my-5 font-bold tracking-tight text-gray-900">
                   Cart
                 </h1>
