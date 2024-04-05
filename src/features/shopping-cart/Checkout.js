@@ -24,10 +24,10 @@ function Checkout() {
   const totalItems = items.reduce((total, item) => item.quantity + total, 0);
 
   const {
-    register,
+    // register,
     handleSubmit,
     reset,
-    formState: { errors },
+    // formState: { errors },
   } = useForm();
 
   const [selectedAddress, setSelectedAddress] = useState(null);
@@ -72,7 +72,7 @@ function Checkout() {
     <>
       {!items.length && <Navigate to="/" replace={true}></Navigate>}
       {currentOrder && <Navigate to={`/ordersucess/${currentOrder.id}`} replace={true}></Navigate>}
-      <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8 h-screen bg-background">
+      <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8  bg-background">
         <div className="grid grid-cols-1 gap-x-8 relative top-60 gap-y-10 lg:grid-cols-5">
           <div className="lg:col-span-3">
             <form
@@ -367,7 +367,7 @@ function Checkout() {
             </form>
           </div>
           <div className="lg:col-span-2">
-            <div className="mx-auto mt-12 bg-background max-w-7xl px-0 sm:px-0 lg:px-0">
+            <div className="mx-auto mt-12 overflow-auto max-w-7xl px-0 sm:px-0 lg:px-0">
               <div className="px-4 py-6 sm:px-6">
                 <h1 className="text-4xl my-5 font-bold tracking-tight text-gray-900">
                   Cart
@@ -462,7 +462,7 @@ function Checkout() {
                         className="font-medium text-text animate-bounce hover:text-primary"
                       >
                         Continue Shopping
-                        <span aria-hidden="true"> &rarr;</span>
+                        <span aria-hidden="true"> </span>
                       </button>
                     </Link>
                   </p>

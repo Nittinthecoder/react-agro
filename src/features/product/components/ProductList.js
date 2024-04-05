@@ -12,8 +12,6 @@ import {
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import {
   ChevronDownIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
   FunnelIcon,
   MinusIcon,
   PlusIcon,
@@ -36,164 +34,11 @@ const filters = [
     id: "category",
     name: "Category",
     options: [
-      { value: "smartphones", label: "smartphones", checked: false },
-      { value: "laptops", label: "laptops", checked: false },
-      { value: "fragrances", label: "fragrances", checked: false },
-      { value: "skincare", label: "skincare", checked: false },
-      { value: "groceries", label: "groceries", checked: false },
-      { value: "home-decoration", label: "home decoration", checked: false },
-      { value: "furniture", label: "furniture", checked: false },
-      { value: "tops", label: "tops", checked: false },
-      { value: "womens-dresses", label: "womens dresses", checked: false },
-      { value: "womens-shoes", label: "womens shoes", checked: false },
-      { value: "mens-shirts", label: "mens shirts", checked: false },
-      { value: "mens-shoes", label: "mens shoes", checked: false },
-      { value: "mens-watches", label: "mens watches", checked: false },
-      { value: "womens-watches", label: "womens watches", checked: false },
-      { value: "womens-bags", label: "womens bags", checked: false },
-      { value: "womens-jewellery", label: "womens jewellery", checked: false },
-      { value: "sunglasses", label: "sunglasses", checked: false },
-      { value: "automotive", label: "automotive", checked: false },
-      { value: "motorcycle", label: "motorcycle", checked: false },
-      { value: "lighting", label: "lighting", checked: false },
-    ],
-  },
-  {
-    id: "brand",
-    name: "Brands",
-    options: [
-      { value: "Apple", label: "Apple", checked: false },
-      { value: "Samsung", label: "Samsung", checked: false },
-      { value: "OPPO", label: "OPPO", checked: false },
-      { value: "Huawei", label: "Huawei", checked: false },
-      {
-        value: "Microsoft Surface",
-        label: "Microsoft Surface",
-        checked: false,
-      },
-      { value: "Infinix", label: "Infinix", checked: false },
-      { value: "HP Pavilion", label: "HP Pavilion", checked: false },
-      {
-        value: "Impression of Acqua Di Gio",
-        label: "Impression of Acqua Di Gio",
-        checked: false,
-      },
-      { value: "Royal_Mirage", label: "Royal_Mirage", checked: false },
-      {
-        value: "Fog Scent Xpressio",
-        label: "Fog Scent Xpressio",
-        checked: false,
-      },
-      { value: "Al Munakh", label: "Al Munakh", checked: false },
-      { value: "Lord - Al-Rehab", label: "Lord   Al Rehab", checked: false },
-      { value: "L'Oreal Paris", label: "L'Oreal Paris", checked: false },
-      { value: "Hemani Tea", label: "Hemani Tea", checked: false },
-      { value: "Dermive", label: "Dermive", checked: false },
-      { value: "ROREC White Rice", label: "ROREC White Rice", checked: false },
-      { value: "Fair & Clear", label: "Fair & Clear", checked: false },
-      { value: "Saaf & Khaas", label: "Saaf & Khaas", checked: false },
-      { value: "Bake Parlor Big", label: "Bake Parlor Big", checked: false },
-      {
-        value: "Baking Food Items",
-        label: "Baking Food Items",
-        checked: false,
-      },
-      { value: "fauji", label: "fauji", checked: false },
-      { value: "Dry Rose", label: "Dry Rose", checked: false },
-      { value: "Boho Decor", label: "Boho Decor", checked: false },
-      { value: "Flying Wooden", label: "Flying Wooden", checked: false },
-      { value: "LED Lights", label: "LED Lights", checked: false },
-      { value: "luxury palace", label: "luxury palace", checked: false },
-      { value: "Golden", label: "Golden", checked: false },
-      {
-        value: "Furniture Bed Set",
-        label: "Furniture Bed Set",
-        checked: false,
-      },
-      { value: "Ratttan Outdoor", label: "Ratttan Outdoor", checked: false },
-      { value: "Kitchen Shelf", label: "Kitchen Shelf", checked: false },
-      { value: "Multi Purpose", label: "Multi Purpose", checked: false },
-      { value: "AmnaMart", label: "AmnaMart", checked: false },
-      {
-        value: "Professional Wear",
-        label: "Professional Wear",
-        checked: false,
-      },
-      { value: "Soft Cotton", label: "Soft Cotton", checked: false },
-      { value: "Top Sweater", label: "Top Sweater", checked: false },
-      {
-        value: "RED MICKY MOUSE..",
-        label: "RED MICKY MOUSE..",
-        checked: false,
-      },
-      { value: "Digital Printed", label: "Digital Printed", checked: false },
-      { value: "Ghazi Fabric", label: "Ghazi Fabric", checked: false },
-      { value: "IELGY", label: "IELGY", checked: false },
-      { value: "IELGY fashion", label: "IELGY fashion", checked: false },
-      {
-        value: "Synthetic Leather",
-        label: "Synthetic Leather",
-        checked: false,
-      },
-      {
-        value: "Sandals Flip Flops",
-        label: "Sandals Flip Flops",
-        checked: false,
-      },
-      { value: "Maasai Sandals", label: "Maasai Sandals", checked: false },
-      { value: "Arrivals Genuine", label: "Arrivals Genuine", checked: false },
-      { value: "Vintage Apparel", label: "Vintage Apparel", checked: false },
-      { value: "FREE FIRE", label: "FREE FIRE", checked: false },
-      { value: "The Warehouse", label: "The Warehouse", checked: false },
-      { value: "Sneakers", label: "Sneakers", checked: false },
-      { value: "Rubber", label: "Rubber", checked: false },
-      { value: "Naviforce", label: "Naviforce", checked: false },
-      { value: "SKMEI 9117", label: "SKMEI 9117", checked: false },
-      { value: "Strap Skeleton", label: "Strap Skeleton", checked: false },
-      { value: "Stainless", label: "Stainless", checked: false },
-      { value: "Eastern Watches", label: "Eastern Watches", checked: false },
-      { value: "Luxury Digital", label: "Luxury Digital", checked: false },
-      { value: "Watch Pearls", label: "Watch Pearls", checked: false },
-      { value: "Bracelet", label: "Bracelet", checked: false },
-      { value: "LouisWill", label: "LouisWill", checked: false },
-      { value: "Copenhagen Luxe", label: "Copenhagen Luxe", checked: false },
-      { value: "Steal Frame", label: "Steal Frame", checked: false },
-      { value: "Darojay", label: "Darojay", checked: false },
-      {
-        value: "Fashion Jewellery",
-        label: "Fashion Jewellery",
-        checked: false,
-      },
-      { value: "Cuff Butterfly", label: "Cuff Butterfly", checked: false },
-      {
-        value: "Designer Sun Glasses",
-        label: "Designer Sun Glasses",
-        checked: false,
-      },
-      { value: "mastar watch", label: "mastar watch", checked: false },
-      { value: "Car Aux", label: "Car Aux", checked: false },
-      { value: "W1209 DC12V", label: "W1209 DC12V", checked: false },
-      { value: "TC Reusable", label: "TC Reusable", checked: false },
-      { value: "Neon LED Light", label: "Neon LED Light", checked: false },
-      {
-        value: "METRO 70cc Motorcycle - MR70",
-        label: "METRO 70cc Motorcycle   MR70",
-        checked: false,
-      },
-      { value: "BRAVE BULL", label: "BRAVE BULL", checked: false },
-      { value: "shock absorber", label: "shock absorber", checked: false },
-      { value: "JIEPOLLY", label: "JIEPOLLY", checked: false },
-      { value: "Xiangle", label: "Xiangle", checked: false },
-      {
-        value: "lightingbrilliance",
-        label: "lightingbrilliance",
-        checked: false,
-      },
-      { value: "Ifei Home", label: "Ifei Home", checked: false },
-      { value: "DADAWU", label: "DADAWU", checked: false },
-      { value: "YIOSI", label: "YIOSI", checked: false },
-    ],
-  },
+      { value: "Wholesale", label: "Wholesale", checked: false },
+      { value: "Retail", label: "Retail", checked: false },
+      // { value: "fragrances", label: "fragrances", checked: false },
+    ]
+  }
 ];
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -285,7 +130,7 @@ export function ProductList() {
                   leaveFrom="transform opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
-                  <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-secondary shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
                       {sortOptions.map((option) => (
                         <Menu.Item key={option.name}>
@@ -329,7 +174,7 @@ export function ProductList() {
           </div>
 
           <section aria-labelledby="products-heading" className="pb-24 pt-6">
-            <h2 id="products-heading" className="sr-only">
+            <h2 id="products-heading" className="ml-[21rem] font-semibold text-lg ">
               Products
             </h2>
 
@@ -390,7 +235,7 @@ function MobileFilter({
             leaveFrom="translate-x-0"
             leaveTo="translate-x-full"
           >
-            <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
+            <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-background py-4 pb-12 shadow-xl">
               <div className="flex items-center justify-between px-4">
                 <h2 className="text-lg font-medium text-gray-900">Filters</h2>
                 <button
@@ -486,15 +331,15 @@ function DesktopFilter({ handleFilter }) {
           {({ open }) => (
             <>
               <h3 className="-my-3 flow-root">
-                <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500">
+                <Disclosure.Button className="flex w-full items-center justify-between bg-background py-3 text-sm text-gray-400 hover:text-gray-500">
                   <span className="font-medium text-gray-900">
                     {section.name}
                   </span>
                   <span className="ml-6 flex items-center">
                     {open ? (
-                      <MinusIcon className="h-5 w-5" aria-hidden="true" />
+                      <MinusIcon className="h-5 w-5 hover:text-red-600" aria-hidden="true" />
                     ) : (
-                      <PlusIcon className="h-5 w-5" aria-hidden="true" />
+                      <PlusIcon className="h-5 w-5 hover:text-text" aria-hidden="true" />
                     )}
                   </span>
                 </Disclosure.Button>
@@ -510,11 +355,11 @@ function DesktopFilter({ handleFilter }) {
                         type="checkbox"
                         defaultChecked={option.checked}
                         onChange={(e) => handleFilter(e, section, option)}
-                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                        className="h-4 w-4 rounded  border-primary text-primary focus:ring-text"
                       />
                       <label
                         htmlFor={`filter-${section.id}-${optionIdx}`}
-                        className="ml-3 text-sm text-gray-600"
+                        className="ml-3 text-md text-text"
                       >
                         {option.label}
                       </label>
@@ -532,7 +377,7 @@ function DesktopFilter({ handleFilter }) {
 
 function Pagination({ page, setPage, handlePage, totalItems }) {
   return (
-    <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+    <div className="flex relative bottom-[-25px] items-center justify-between border-t border-gray-200 bg-secondary px-4 py-3 sm:px-6">
       <div className="flex flex-1 justify-between sm:hidden">
         <a
           href="#"
@@ -549,18 +394,18 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
       </div>
       <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
         <div>
-          <p className="text-sm text-gray-700">
+          <p className="text-md text-text">
             Showing{" "}
-            <span className="font-medium">
+            <span className="font-semibold">
               {(page - 1) * ITEMS_PER_PAGE + 1}
             </span>{" "}
             to{" "}
-            <span className="font-medium">
+            <span className="font-semibold">
               {page * ITEMS_PER_PAGE < totalItems
                 ? page * ITEMS_PER_PAGE
                 : totalItems}
             </span>{" "}
-            of <span className="font-medium">{totalItems}</span> results
+            of <span className="font-semibold">{totalItems}</span> results
           </p>
         </div>
         <div>
@@ -568,13 +413,6 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
             className="isolate inline-flex -space-x-px rounded-md shadow-sm"
             aria-label="Pagination"
           >
-            <a
-              href="#"
-              className="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-            >
-              <span className="sr-only">Previous</span>
-              <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
-            </a>
             {/* Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" */}
 
             {Array.from({ length: Math.ceil(totalItems / ITEMS_PER_PAGE) }).map(
@@ -583,23 +421,13 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
                   onClick={(e) => handlePage(index + 1)}
                   aria-current="page"
                   className={`relative cursor-pointer z-10 inline-flex items-center ${
-                    index + 1 === page
-                      ? "bg-indigo-600 text-white"
-                      : "text-gray-400"
+                    index + 1 === page ? "bg-text text-white" : "text-text"
                   } px-4 py-2 text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
                 >
                   {index + 1}
                 </div>
               )
             )}
-
-            <a
-              href="#"
-              className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-            >
-              <span className="sr-only">Next</span>
-              <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
-            </a>
           </nav>
         </div>
       </div>
@@ -608,14 +436,14 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
 }
 function ProductGrid({ products }) {
   return (
-    <div className="">
+    <div className=" h-screen">
       <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {products?.map((product) => (
             <div>
               <Link to={`/productdetails/${product.id}`} key={product.id}>
-                <div className="group relative border-solid border-2 p-2 border-gray-200">
-                  <div className="min-h-60 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
+                <div className="group relative border-solid border-2 p-2 bg-secondary border-primary rounded-md">
+                  <div className="min-h-60 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md  lg:aspect-none group-hover:opacity-75 lg:h-40">
                     <img
                       src={product.thumbnail}
                       alt={product.title}
@@ -639,14 +467,9 @@ function ProductGrid({ products }) {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm block font-medium text-gray-900">
-                        $
-                        {Math.round(
-                          product.price * (1 - product.discountPercentage / 100)
-                        )}
-                      </p>
-                      <p className="text-sm block line-through font-medium text-gray-400">
-                        ${product.price}
+                      
+                      <p className="text-sm block font-bold text-text">
+                        Rs {product.price}
                       </p>
                     </div>
                   </div>

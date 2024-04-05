@@ -19,11 +19,11 @@ export default function UsrOrders() {
   return (
     <>
     {!user && <Navigate to="/" replace={true}></Navigate>}
-      <div className="bg-background">
+      <div className="">
         {orders.map((order) => (
           <div>
             <div>
-              <div className="mx-auto  bg-background max-w-7xl px-4 sm:px-6 lg:px-8 mb-5 ">
+              <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8 mb-5 ">
                 <div className="border-t border-primary px-4 py-6 sm:px-6">
                   <h1 className="text-4xl  font-bold tracking-tight text-gray-900">
                     Order # {order.id}
