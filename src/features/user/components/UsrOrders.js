@@ -7,7 +7,6 @@ import { Navigate } from "react-router-dom";
 
 export default function UsrOrders() {
   const dispatch = useDispatch();
-  // const user = useSelector(selectLoggedInUser);
   const user = useSelector(selectUserInfo);
   const orders = useSelector(selectUserOrders);
 
