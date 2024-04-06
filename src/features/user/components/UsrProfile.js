@@ -63,6 +63,9 @@ export default function UsrProfile() {
           <h3 className="text-xl my-1 font-bold tracking-tight text-red-900">
             Email : {user.email ? user.email : "NEW USER"}
           </h3>
+          {user.role === 'admin' && <h3 className="text-xl my-1 font-bold tracking-tight text-red-900">
+            Role : {user.role}
+          </h3>}
           <div className="flow-root"></div>
         </div>
         <div className="border-t border-primary px-4 py-6 sm:px-6">

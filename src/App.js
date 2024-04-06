@@ -12,6 +12,7 @@ import { fetchItemsByUserIdAsync } from "./features/shopping-cart/CartSlice";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Protected from "./features/auth/components/Protected";
+import ProtectedAdmin from "./features/auth/components/ProtectedAdmin";
 import { useDispatch, useSelector } from "react-redux";
 import { selectLoggedInUser } from "./features/auth/authSlice";
 import PageNotFound from "./pages/404";
@@ -21,7 +22,11 @@ import UserProfilePage from "./pages/UserProfilePage";
 import { fetchLoggedInUserAsync } from "./features/user/userSlice";
 import Logout from "./features/auth/components/Logout";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
-
+import AdminProductDetailsPage from "./pages/AdminProductDetailsPage";
+import AdminHome from "./pages/AdminHome";
+import ProductForm from "./features/admin/components/ProductForm";
+import ProductFormPage from "./pages/ProductFormPage";
+import AdminOrderPage from "./pages/AdminOrderPage";
 
 const router = createBrowserRouter([
   {
@@ -29,16 +34,24 @@ const router = createBrowserRouter([
     element: <Home></Home>,
   },
   {
+    path: "/admin",
+    element: <ProtectedAdmin><AdminHome></AdminHome></ProtectedAdmin>,
+  },
+  {
+    path: "/admin/orders",
+    element: <ProtectedAdmin><AdminOrderPage></AdminOrderPage></ProtectedAdmin>,
+  },
+  {
     path: "/login",
-    element: <LoginPage />
+    element: <LoginPage />,
   },
   {
     path: "/signup",
-    element: <SignupPage />
+    element: <SignupPage />,
   },
   {
     path: "/forgotpassword",
-    element: <ForgotPasswordPage/>
+    element: <ForgotPasswordPage />,
   },
   {
     path: "/cart",
@@ -62,6 +75,30 @@ const router = createBrowserRouter([
       <Protected>
         <ProductDetailsPage />
       </Protected>
+    ),
+  },
+  {
+    path: "/admin/productform",
+    element: (
+      <ProtectedAdmin>
+        <ProductFormPage />
+      </ProtectedAdmin>
+    ),
+  },
+  {
+    path: "/admin/productform/edit/:id",
+    element: (
+      <ProtectedAdmin>
+        <ProductFormPage />
+      </ProtectedAdmin>
+    ),
+  },
+  {
+    path: "/admin/productdetails/:id",
+    element: (
+      <ProtectedAdmin>
+        <AdminProductDetailsPage />
+      </ProtectedAdmin>
     ),
   },
   {
@@ -90,13 +127,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/logout",
-    element: (
-        <Logout />
-    ),
+    element: <Logout />,
   },
   {
     path: "*",
-    element: <PageNotFound></PageNotFound>
+    element: <PageNotFound></PageNotFound>,
   },
 ]);
 

@@ -5,8 +5,8 @@
       "title": "Fresh Paddy",
       "description": "Fresh Paddy Harvested from the lush fields of india, our premium paddy is the foundation of great rice. Carefully selected and untouched by processing, our paddy retains its natural goodness and authentic taste. Ideal for those who prefer to mill their rice at home or for agricultural use, our paddy promises freshness and quality in every grain. Experience the essence of pure rice with our premium paddy.",
       "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
-      "price": 2640,
-      "rating": 4.9,
+      "price": 1000,
+      "rating": 0,
       "stock": 94,
       "brand": "AgroXPlanet",
       "category": "Wholesale",
@@ -18,13 +18,17 @@
         "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ]
+      ],
+      "image1": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image2": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image3": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image4": "https://images.unsplash.com/photo-1603106116068-02fc27fe5131?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "2",
       "title": "Sugarcane",
       "description": "Our pure sugarcane is harvested from the finest fields, ensuring sweetness and quality. Use it to sweeten your beverages or add flavor to your desserts.",
-      "price": 2640,
+      "price": 1200,
       "rating": 4.44,
       "stock": 34,
       "details": "Experience convenience and quality with our premium ecommerce platform. Explore a vast selection of products, from tech gadgets to fashion essentials. Enjoy secure transactions, fast delivery, and top-notch customer service. Shop confidently with us today!",
@@ -38,7 +42,11 @@
         "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
         "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
         "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D"
-      ]
+      ],
+      "image1": "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+      "image2": "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+      "image3": "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D",
+      "image4": "https://media.istockphoto.com/id/157608572/photo/sugar-cane-sticks-isolated-on-white-backdrop.jpg?s=1024x1024&w=is&k=20&c=FyTvxuarDj7WswZcfuO-M7O2Wi5TKNBorG8h4-nlATU%3D"
     },
     {
       "id": "3",
@@ -399,6 +407,42 @@
         "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
         "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png"
       ]
+    },
+    {
+      "id": "9830",
+      "title": "FFT - PADDY",
+      "description": "Our fresh corn is harvested at peak ripeness to ensure maximum flavor and sweetness. Enjoy it boiled, grilled, or as an ingredient in your favorite dishes.",
+      "details": "Our fresh corn is harvested at peak ripeness to ensure maximum flavor and sweetness. Enjoy it boiled, grilled, or as an ingredient in your favorite dishes.",
+      "price": 210,
+      "stock": 22,
+      "category": "Wholesale",
+      "thumbnail": "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+      "image1": "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+      "image2": "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+      "image3": "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+      "image4": "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+      "images": [
+        "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+        "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+        "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png",
+        "https://5.imimg.com/data5/LS/LP/GLADMIN-2938747/paddy-bpt-5204-500x500.png"
+      ],
+      "rating": 0,
+      "deleted": true
+    }
+  ],
+  "categories": [
+    {
+      "value": "Wholesale",
+      "label": "Wholesale",
+      "checked": false,
+      "id": "6f6e"
+    },
+    {
+      "value": "Retail",
+      "label": "Retail",
+      "checked": false,
+      "id": "4879"
     }
   ],
   "users": [
@@ -414,10 +458,27 @@
           "street": "Swami Mudaliar St",
           "city": "Puducherry",
           "state": "Pondicherry",
-          "pinCode": "605003"
+          "pinCode": "605001"
         }
       ],
       "role": "user"
+    },
+    {
+      "id": "11f7",
+      "email": "admin@gmail.com",
+      "password": "1234Admin",
+      "addresses": [
+        {
+          "name": "Nittin Nobby Mathew",
+          "email": "mathewnittin182002@gmail.com",
+          "phone": "08610685517",
+          "street": "Swami Mudaliar St",
+          "city": "Puducherry",
+          "state": "Pondicherry",
+          "pinCode": "605001"
+        }
+      ],
+      "role": "admin"
     }
   ],
   "cart": [],

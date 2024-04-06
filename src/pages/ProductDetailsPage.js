@@ -1,7 +1,7 @@
 import ProductDetails from '../features/product/components/ProductDetails'
 
 
-function Home() {
+function ProductDetailsPage() {
   return (
     <div>
         <ProductDetails />
@@ -9,4 +9,4 @@ function Home() {
   )
 }
 
-export default Home
+export default ProductDetailsPage

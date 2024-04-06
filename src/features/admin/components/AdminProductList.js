@@ -4,10 +4,11 @@
 import React, { useState, Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
+  fetchCategoriesAsync,
   fetchProductsByFiltersAsync,
   selectAllProducts,
   selectTotalItems,
-} from "../ProductSlice";
+} from "../../product/ProductSlice";
 
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import {
@@ -19,10 +20,10 @@ import {
   StarIcon,
   XMarkIcon,
 } from "@heroicons/react/20/solid";
+
 import { ITEMS_PER_PAGE } from "../../../app/constants";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { selectUserInfo } from "../../user/userSlice";
 
 const sortOptions = [
   { name: "Best Rating", sort: "-rating", current: false },
@@ -44,13 +45,11 @@ const filters = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-export function ProductList() {
+export function AdminProductList() {
   const dispatch = useDispatch();
   const products = useSelector(selectAllProducts);
-  console.log();
+  console.log(products);
   const totalItems = useSelector(selectTotalItems);
-  const user = useSelector(selectUserInfo);
-  console.log(user);
 
   const [sort, setSort] = useState({});
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
@@ -97,6 +96,11 @@ export function ProductList() {
     setPage(1);
   }, [totalItems, sort]);
 
+  useEffect(() => {
+    // dispatch(fetchBrandsAsync());
+    dispatch(fetchCategoriesAsync());
+  }, []);
+
   return (
     <div className="">
       <div>
@@ -109,7 +113,7 @@ export function ProductList() {
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900">
-              All Products
+               Products
             </h1>
 
             <div className="flex items-center">
@@ -177,12 +181,13 @@ export function ProductList() {
           </div>
 
           <section aria-labelledby="products-heading" className="pb-24 pt-6">
-            <h2
+            <Link
+            to="/admin/productform"
               id="products-heading"
-              className="ml-[21rem] font-semibold text-lg "
+              className="ml-[21rem] font-semibold text-lg bg-text text-background px-2 py-2 rounded-lg hover:bg-primary hover:text-text" 
             >
-              Products
-            </h2>
+              Add New Products
+            </Link>
 
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
               <DesktopFilter handleFilter={handleFilter}></DesktopFilter>
@@ -477,11 +482,9 @@ function ProductGrid({ products }) {
                         <StarIcon className="w-6 h-6 inline"></StarIcon>
                         <span className=" align-bottom">{product.rating}</span>
                       </p>
-                      {product.deleted &&  (
-                        <p className="mt-1 text-sm font-bold text-rose-600">
-                          <span className=" align-bottom">Deleted</span>
-                        </p>
-                      )}
+                      {product.deleted && <p className="mt-1 text-sm font-bold text-rose-600">
+                        <span className=" align-bottom">Deleted</span>
+                      </p>}
                     </div>
                     <div>
                       <p className="text-sm block font-bold text-text">
@@ -491,6 +494,13 @@ function ProductGrid({ products }) {
                   </div>
                 </div>
               </Link>
+              <div className="mt-2">
+                <Link
+                  to={`/admin/productform/edit/${product.id}`}
+                 className="bg-primary rounded-md px-2 py-1 hover:bg-text hover:text-background">
+                  Edit
+                </Link>
+              </div>
             </div>
           ))}
         </div>
