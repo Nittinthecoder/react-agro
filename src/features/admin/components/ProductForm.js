@@ -1,14 +1,14 @@
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { clearSelectedProduct, createProductAsync,  fetchProductByIdAsync, selectAllProducts, selectCategories, selectProductById, updateProductAsync } from "../../product/ProductSlice";
+import { clearSelectedProduct, createProductAsync,  fetchProductByIdAsync, selectCategories, selectProductById, updateProductAsync } from "../../product/ProductSlice";
 import { useEffect } from "react";
 
 function ProductForm() {
   const params = useParams();;
   const category = useSelector(selectCategories);
   const selectedProduct = useSelector(selectProductById);
-  const products = useSelector(selectAllProducts);
+  // const products = useSelector(selectAllProducts);
   const disptach = useDispatch();
 //   console.log(category);
   const {
@@ -79,9 +79,9 @@ function ProductForm() {
       })}>
         <div>
           <div className="border-b border-gray-900/10 relative mx-auto w-auto sm:top-[3rem] pb-12">
-          {selectedProduct.deleted  && <h2 className="text-base font-bold animate-pulse leading-7 text-rose-600 mb-2">
+          {/* {selectedProduct.deleted  && <h2 className="text-base font-bold animate-pulse leading-7 text-rose-600 mb-2">
               This product has been deleted
-            </h2>}
+            </h2>} */}
             <h2 className="text-base font-semibold  leading-7 text-gray-900">
               Product Information
             </h2>

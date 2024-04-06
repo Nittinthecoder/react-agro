@@ -4,14 +4,14 @@ import { resetCartAsync } from "../shopping-cart/CartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { selectLoggedInUser } from "../auth/authSlice";
 import { resetOrder } from "./orderSlice";
-import { selectCurrentOrder } from "../order/orderSlice";
+// import { selectCurrentOrder } from "../order/orderSlice";
 
 
 function OrderSucess() {
   const params = useParams() 
   const dispatch = useDispatch();
   const user = useSelector(selectLoggedInUser);
-  const currentOrder =  useSelector(selectCurrentOrder);
+  // const currentOrder =  useSelector(selectCurrentOrder);
   
   useEffect(()=>{
    // reset cart
