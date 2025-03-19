@@ -3,7 +3,7 @@ import { ITEMS_PER_PAGE } from "../../app/constants";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 export default function Pagination({ page, setPage, handlePage, totalItems }) {
     return (
-      <div className="flex relative bottom-[-25px] items-center justify-between border-t border-gray-200 bg-secondary px-4 py-3 sm:px-6">
+      <div className="flex relative bottom-[-269px] items-center justify-between border-t border-gray-200 bg-secondary px-4 py-3 sm:px-6">
         <div className="flex flex-1 justify-between sm:hidden">
           <a
             href="#"
